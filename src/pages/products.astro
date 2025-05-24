@@ -1,0 +1,35 @@
+---
+import Base from '@/layouts/Base.astro';
+import audio from '@/config/products.json';
+import product from '@/config/product-categories.json';
+import ProductCard from '@/components/ProductCard.astro';
+import PageHeader from '@/partials/PageHeader.astro';
+
+const { categories } = product;
+const { products } = audio;
+
+const filteredProducts = (id: number) => {
+  return products.filter((item) => item.category === id);
+};
+---
+
+<Base>
+  <PageHeader
+    title="Audio Shop"
+    description="30 minute audio with afformations (questions) paired with binaural beats meditation background music to amplify the state of receptivity."
+  />
+  {
+    categories.map((category) => (
+      <section class="section">
+        <div class="container">
+          <h2>{category.title}</h2>
+          <div class="mt-8 grid md:grid-cols-3 gap-4 items-stretch">
+            {filteredProducts(category.id).map((item) => (
+              <ProductCard info={item} />
+            ))}
+          </div>
+        </div>
+      </section>
+    ))
+  }
+</Base>

@@ -1,0 +1,22 @@
+/* navbar toggler */
+input#nav-toggle:checked + label #show-button {
+  #ham_top {
+    @apply rotate-45 translate-y-1.5;
+  }
+  #ham_bottom {
+    @apply -rotate-45 -translate-y-2;
+  }
+}
+
+input#nav-toggle:checked ~ #nav-menu {
+  @apply block lg:flex;
+}
+
+/* form style */
+.form-input {
+  @apply w-full rounded border-transparent bg-light px-6 py-4 text-text placeholder:text-text-light focus:border-primary focus:ring-transparent transition-colors duration-500;
+}
+
+.form-label {
+  @apply mb-4 block font-medium text-text;
+}

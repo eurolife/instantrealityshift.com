@@ -1,0 +1,138 @@
+---
+import GradientTitle from '@/components/GradientTitle.astro';
+import ImageMod from '@/components/ImageMod.astro';
+import RightArrowBtn from '@/components/RightArrowBtn.astro';
+---
+
+<section class="section xl:pb-20 overflow-hidden">
+  <div class="container">
+    <div class="mb-10 last:mb-0">
+      <div
+        class="flex flex-col-reverse lg:flex-row lg:items-center gap-10 w-full"
+      >
+        {/* LEFT */}
+        <div class="lg:w-[52%] overflow-hidden">
+          <div class="grid place-items-center relative isolate py-32">
+            <div class="absolute inset-0 grid place-items-center">
+              <canvas
+                class="absolute inset-0 w-full h-full overflow-hidden -z-10 serviceSporeCanvas"
+              ></canvas>
+              <div
+                class="flex items-center justify-center rotate-[55deg] w-full h-full -z-20 bg-gradient-image"
+              >
+                <div
+                  class="w-1/3 aspect-square bg-secondary blur-[90px] rounded-full translate-x-10"
+                >
+                </div>
+                <div
+                  class="w-1/3 aspect-square bg-tertiary blur-[90px] rounded-full -translate-x-10"
+                >
+                </div>
+              </div>
+            </div>
+            <ImageMod
+              src="/images/shapes/soundwaves.png"
+              alt="s"
+              width={600}
+              height={600}
+              class="w-[220px] md:w-auto"
+            />
+          </div>
+        </div>
+        {/* RIGHT */}
+        <div class="lg:w-[48%]">
+          <div class="space-t-20">
+            <div class="space-y-6">
+              <GradientTitle
+                title="What makes our audios different?"
+                data-aos="fade-up-sm"
+                data-aos-delay="100"
+              />
+
+              <h2 data-aos="fade-up-sm" data-aos-delay="150">
+                Experience the Shift That Affirmations Alone Can't Give You
+              </h2>
+
+              <p
+                class="text-2xl md:text-3xl text-text/80"
+                data-aos="fade-up-sm"
+                data-aos-delay="200"
+              >
+                Tired of repeating affirmations that don’t seem to stick? These
+                audios do something different — <span
+                  class="text-white font-bold">and far more powerful</span
+                >.
+              </p>
+              <p
+                class="text-lg md:text-xl text-text/80"
+                data-aos="fade-up-sm"
+                data-aos-delay="200"
+              >
+                Each track uses <span class="font-bold text-white"
+                  >afformations</span
+                >: carefully crafted <span class="italic text-white"
+                  >questions</span
+                > that bypass your inner resistance and invite your subconscious
+                to align with love, abundance, and well-being. Instead of forcing
+                belief, they open the door to possibility — and your mind begins
+                to find reasons those desires are already true.
+              </p>
+              <p
+                class="text-lg md:text-xl text-text/80"
+                data-aos="fade-up-sm"
+                data-aos-delay="200"
+              >
+                Layered with <span class="font-bold text-white"
+                  >binaural beats meditation music</span
+                >, every session shifts your brain into a calm, receptive state
+                where deep transformation happens — quickly, naturally, and from
+                the inside out.
+              </p>
+            </div>
+            <div class="" data-aos="fade-up-sm" data-aos-delay="250">
+              <div
+                class="flex flex-col mt-8 justify-center items-center text-secondary"
+              >
+                <p class="text-2xl font-semibold">Listen daily</p>
+                <!-- <p
+                  class="text-4xl font-bold leading-tight mb-8 px-8 text-white"
+                >
+                  .
+                </p> -->
+                <p class="text-2xl font-semibold">Watch your reality respond</p>
+                <div class="mt-8">
+                  <RightArrowBtn
+                    link="/products"
+                    label="Start Your Shift"
+                    className="btn btn-primary py-3"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    import { sporeCanvas } from '@/lib/utils/particleCanvas';
+
+    document.addEventListener('astro:page-load', () => {
+      const targetElementClassName = '.serviceSporeCanvas';
+      const particleCount = 100;
+      const particleMinSize = 2;
+      const particleMaxSize = 6;
+      const particleMinSpeed = 0.1;
+      const particleMaxSpeed = 1;
+      sporeCanvas(
+        targetElementClassName,
+        particleCount,
+        particleMinSize,
+        particleMaxSize,
+        particleMinSpeed,
+        particleMaxSpeed
+      );
+    });
+  </script>
+</section>

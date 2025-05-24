@@ -1,0 +1,29 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "slug": "wealth",
+      "title": "Wealth and Success"
+    },
+    {
+      "id": 2,
+      "slug": "love",
+      "title": "Love and Relationships"
+    },
+    {
+      "id": 3,
+      "slug": "health",
+      "title": "Health and Wellness"
+    },
+    {
+      "id": 4,
+      "slug": "self",
+      "title": "Self Confidence and Self Love"
+    },
+    {
+      "id": 5,
+      "slug": "addiction",
+      "title": "Breaking Addiction"
+    }
+  ]
+}

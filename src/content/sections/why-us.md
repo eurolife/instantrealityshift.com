@@ -1,0 +1,36 @@
+---
+head: "WHY SECURY"
+title: "Where Hacks and Breaches Hit a Brick Wall."
+description: "Secury leverages powerful encryption and blockchain technology to provide industry-leading protection for your sensitive data."
+marqueeTextList:
+  - textList:
+      - "Unmatched Privacy"
+      - "Ironclad Defense"
+      - "Enterprise-Level Security"
+      - "Advanced Encryption"
+      - "Data Integrity Guaranteed"
+      - "Zero-Trust Architecture"
+      - "Advanced Encryption"
+      - "Data Integrity Guaranteed"
+      - "Zero-Trust Architecture"
+  - textList:
+      - "Unbreachable Data"
+      - "Comprehensive Privacy"
+      - "Quantum-Resistant Keys"
+      - "Adaptive Security"
+      - "Encrypted Storage"
+      - "Seamless Integration"
+      - "Adaptive Security"
+      - "Encrypted Storage"
+      - "Seamless Integration"
+  - textList:
+      - "Immersive Experience"
+      - "Multi-Layered Protection"
+      - "Regulatory Compliance"
+      - "Risk Mitigation"
+      - "Real-Time Monitoring"
+      - "Future-Proof Security"
+      - "Risk Mitigation"
+      - "Real-Time Monitoring"
+      - "Future-Proof Security"
+---

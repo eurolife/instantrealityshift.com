@@ -1,0 +1,36 @@
+{
+  "products": [
+    {
+      "category": 1,
+      "title": "Wealth and Success",
+      "item_number": "xtErD",
+      "description": "Brings the most wealth and success into your life and improves upon what you are already doing.",
+      "price": "10",
+      "image": "wealth-success"
+    },
+    {
+      "category": 2,
+      "title": "Your Ideal Relationship",
+      "item_number": "xtErD",
+      "description": "Brings the best relationships into your life and improve those you are in already.",
+      "price": "10",
+      "image": "relationship"
+    },
+    {
+      "category": 2,
+      "title": "Attract Your Soulmate",
+      "item_number": "xtErD",
+      "description": "Attracts the soulmate of your dreams into your life. You will be reprogrammed to believe and therefore it shall be.",
+      "price": "10",
+      "image": "soulmate"
+    },
+    {
+      "category": 2,
+      "title": "Attract Love and Romance",
+      "item_number": "xtErD",
+      "description": "Enhances your love life and brings the excitement of love and romance into future and existing love relationships.",
+      "price": "10",
+      "image": "romance"
+    }
+  ]
+}
