@@ -1,0 +1,31 @@
+---
+import Base from '@/layouts/Base.astro';
+import PageHeader from '@/partials/PageHeader.astro';
+import type { CollectionEntry } from 'astro:content';
+import { getEntry } from 'astro:content';
+
+const { description, hero, meta_title, title } = (
+  (await getEntry(
+    'companyPageCollection',
+    '-index'
+  )) as CollectionEntry<'companyPageCollection'>
+).data;
+---
+
+<Base title={title} meta_title={meta_title} description={description}>
+  <PageHeader title="Thank you!" description="" />
+  <section class="section">
+    <div class="container">
+      <p class="text-lg">
+        Thank you for your order. <span class="font-bold"
+          >You should receive an email with the download link.</span
+        > If you don't receive the email, please check your spam or junk folder.
+        Please note the transaction on your bank or credit card statement will show
+        the name 'Payhip*INSTREALITY'. If you need any assistance with your order,
+        please contact <a href="mailto:info@instantrealityshift.com"
+          >info@instantrealityshift.com</a
+        >.
+      </p>
+    </div>
+  </section>
+</Base>

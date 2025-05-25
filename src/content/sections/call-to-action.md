@@ -1,14 +1,14 @@
 ---
 enable: true
-head: "PEACE OF MIND IS OUR #1 PRIORITY"
-title: "Start securing from today"
-image: "/images/call-to-action.png"
-description: "With Secury's advanced AI-driven threat detection, you gain 24/7 security monitoring against cyber attacks."
+head: 'ARE YOU READY FOR CHANGE?'
+title: 'Start your reality shift today'
+image: '/images/call-to-action.png'
+description: 'Ready to shift your reality? Explore our audio collection and start aligning with the life you’re meant to live.'
 button:
   enable: true
-  label: "Get Started For Free"
-  link: "/contact"
+  label: 'Explore Audios'
+  link: '/products'
 shapes:
-  - image: "/images/shapes/cta_shape.png"
-  - image: "/images/shapes/cta_shape_1.png"
+  - image: '/images/shapes/cta_shape.png'
+  - image: '/images/shapes/cta_shape_1.png'
 ---
