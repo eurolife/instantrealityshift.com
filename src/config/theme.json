@@ -9,7 +9,9 @@
         "border": "#2B2B2B",
         "dark": "#22112b",
         "light": "#0B0B0B",
-        "lighter": "#666"
+        "lighter": "#666",
+        "cartbutton": "#BC0EAD",
+        "cartbuttonx": "#890A7E"
       },
       "text_color": {
         "text": "#F0F0F0",

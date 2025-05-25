@@ -14,16 +14,29 @@ const filteredProducts = (id: number) => {
 ---
 
 <Base>
+  <!-- Payhip -->
+  <!-- <script is:inline type="text/javascript" src="https://payhip.com/payhip.js"
+  ></script>
+  <script is:inline type="text/javascript">
+    var PayhipConfig = {
+      enableCart: true,
+    };
+  </script> -->
   <PageHeader
     title="Audio Shop"
     description="30 minute audio with afformations (questions) paired with binaural beats meditation background music to amplify the state of receptivity."
   />
+
+  <!-- <a href="#" onclick="PayhipShowCart(); return false;">🛒 View Cart</a> -->
   {
     categories.map((category) => (
       <section class="section">
         <div class="container">
           <h2>{category.title}</h2>
           <div class="mt-8 grid md:grid-cols-3 gap-4 items-stretch">
+            {!filteredProducts(category.id).length && (
+              <p class="my-8">Audios coming soon!</p>
+            )}
             {filteredProducts(category.id).map((item) => (
               <ProductCard info={item} />
             ))}
@@ -32,4 +45,5 @@ const filteredProducts = (id: number) => {
       </section>
     ))
   }
+  <!--  -->
 </Base>

@@ -1,10 +1,10 @@
 ---
-import { markdownify } from "@/lib/utils/textConverter";
-import { getEntry } from "astro:content";
-import GradientTitle from "./GradientTitle.astro";
-import type { CollectionEntry } from "astro:content";
+import { markdownify } from '@/lib/utils/textConverter';
+import { getEntry } from 'astro:content';
+import GradientTitle from './GradientTitle.astro';
+import type { CollectionEntry } from 'astro:content';
 
-const whyUs = (await getEntry("whyUs", "why-us")) as CollectionEntry<"whyUs">;
+const whyUs = (await getEntry('whyUs', 'why-us')) as CollectionEntry<'whyUs'>;
 const { head, title, description, marqueeTextList } = whyUs?.data;
 ---
 
@@ -14,10 +14,35 @@ const { head, title, description, marqueeTextList } = whyUs?.data;
       class="flex flex-col-reverse lg:flex-row lg:items-center gap-10 w-full"
     >
       {/* LEFT */}
-      <div class="lg:w-[52%]">
+      <div class="lg:w-[44%]">
+        <div class="space-y-6">
+          <GradientTitle
+            title="Time for CHANGE"
+            data-aos="fade-up-sm"
+            data-aos-delay="100"
+          />
+          <h2 data-aos="fade-up-sm" data-aos-delay="150">
+            Unlock the Fastest Way to Shift Your Reality
+          </h2>
+          <p
+            class="text-xl md:text-3xl text-text/80"
+            data-aos="fade-up-sm"
+            data-aos-delay="200"
+          >
+            What if the secret to manifesting the life you want… wasn’t in
+            repeating affirmations, but in <span
+              class="italic font-bold text-white"
+              >asking the right questions</span
+            >?
+          </p>
+        </div>
+      </div>
+
+      {/* RIGHT */}
+      <div class="lg:w-[56%]">
         <!-- gradient container -->
         <div>
-          <div class="space-y-5">
+          <div class="space-y-10">
             {
               marqueeTextList &&
                 marqueeTextList.length &&
@@ -28,7 +53,7 @@ const { head, title, description, marqueeTextList } = whyUs?.data;
                         marqueeText.textList.length &&
                         marqueeText.textList.map((text) => (
                           <p
-                            class="text-h3-sm text-text-light font-light swiper-slide"
+                            class="text-2xl text-text-light font-light swiper-slide"
                             set:html={markdownify(text)}
                           />
                         ))}
@@ -39,47 +64,18 @@ const { head, title, description, marqueeTextList } = whyUs?.data;
           </div>
         </div>
       </div>
-      {/* RIGHT */}
-      <div class="lg:w-[48%]">
-        <div class="space-y-6">
-          <GradientTitle
-            title={head}
-            data-aos="fade-up-sm"
-            data-aos-delay="100"
-          />
-          {
-            title && (
-              <h2
-                set:html={markdownify(title)}
-                data-aos="fade-up-sm"
-                data-aos-delay="150"
-              />
-            )
-          }
-          {
-            description && (
-              <p
-                class="text-lg text-text/80"
-                set:html={markdownify(description)}
-                data-aos="fade-up-sm"
-                data-aos-delay="200"
-              />
-            )
-          }
-        </div>
-      </div>
     </div>
   </div>
 </section>
 
 <script>
-  import { Swiper } from "swiper";
-  import "swiper/css";
-  import "swiper/css/pagination";
-  import { Autoplay } from "swiper/modules";
+  import { Swiper } from 'swiper';
+  import 'swiper/css';
+  import 'swiper/css/pagination';
+  import { Autoplay } from 'swiper/modules';
 
   function initSwiper() {
-    const sliders = document.querySelectorAll(".is-texts-slider");
+    const sliders = document.querySelectorAll('.is-texts-slider');
 
     sliders.forEach((slider, index) => {
       const isOdd = index % 2 !== 0;
@@ -88,7 +84,7 @@ const { head, title, description, marqueeTextList } = whyUs?.data;
         modules: [Autoplay],
         centeredSlides: true,
         speed: 10000,
-        direction: "horizontal", // Or "vertical" depending on your preference
+        direction: 'horizontal', // Or "vertical" depending on your preference
         autoplay: {
           delay: 0,
           disableOnInteraction: false,
@@ -105,5 +101,5 @@ const { head, title, description, marqueeTextList } = whyUs?.data;
     });
   }
 
-  document.addEventListener("astro:page-load", initSwiper);
+  document.addEventListener('astro:page-load', initSwiper);
 </script>

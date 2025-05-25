@@ -1,14 +1,14 @@
 ---
-import GradientTitle from "@/components/GradientTitle.astro";
-import TestimonialCard from "@/components/TestimonialCard.astro";
-import type { CollectionEntry } from "astro:content";
-import { getEntry } from "astro:content";
+import GradientTitle from '@/components/GradientTitle.astro';
+import TestimonialCard from '@/components/TestimonialCard.astro';
+import type { CollectionEntry } from 'astro:content';
+import { getEntry } from 'astro:content';
 
 const { enable, description, head, testimonials, title } = (
   (await getEntry(
-    "testimonial",
-    "testimonial"
-  )) as CollectionEntry<"testimonial">
+    'testimonial',
+    'testimonial'
+  )) as CollectionEntry<'testimonial'>
 ).data;
 ---
 
@@ -37,10 +37,12 @@ const { enable, description, head, testimonials, title } = (
               testimonials.map((testimonial, index) => {
                 const aosDelay = 100 * (index % 3);
                 return (
-                  <TestimonialCard
-                    aosDelay={aosDelay}
-                    testimonial={testimonial}
-                  />
+                  index < 3 && (
+                    <TestimonialCard
+                      aosDelay={aosDelay}
+                      testimonial={testimonial}
+                    />
+                  )
                 );
               })}
           </div>

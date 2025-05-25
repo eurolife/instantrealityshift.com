@@ -46,6 +46,7 @@ export interface NavigationLink {
                 <a
                   href={item.url}
                   aria-label={item.name}
+                  data-astro-reload
                   class="nav-link inline-flex items-center cursor-pointer"
                 >
                   {item.name}
@@ -55,7 +56,11 @@ export interface NavigationLink {
                 <ul class="hidden border border-border p-8 mb-2 lg:mb-0 lg:transition-[opacity_transform] lg:duration-500 lg:absolute lg:invisible lg:group-hover:visible lg:opacity-0 lg:group-hover:opacity-100 lg:scale-95 lg:group-hover:scale-100 lg:flex lg:flex-col lg:gap-y-2 min-w-max nav-dropdown-list">
                   {item.children.map((child: any) => (
                     <li class="nav-dropdown-item">
-                      <a href={child.url} class="nav-dropdown-link">
+                      <a
+                        href={child.url}
+                        class="nav-dropdown-link"
+                        data-astro-reload
+                      >
                         {child.name}
                       </a>
                     </li>
@@ -114,6 +119,7 @@ export interface NavigationLink {
               <a
                 href={item.url}
                 aria-label={item.name}
+                data-astro-reload
                 class=" nav-link inline-flex items-center cursor-pointer"
               >
                 {item.name}
@@ -126,7 +132,11 @@ export interface NavigationLink {
               >
                 {item.children.map((child: any) => (
                   <li class="nav-dropdown-item">
-                    <a href={child.url} class="nav-dropdown-link">
+                    <a
+                      href={child.url}
+                      data-astro-reload
+                      class="nav-dropdown-link"
+                    >
                       {child.name}
                     </a>
                   </li>
@@ -143,6 +153,7 @@ export interface NavigationLink {
               class="btn btn-primary"
               aria-label={config.navigation_button.label}
               href={config.navigation_button.link}
+              data-astro-reload
             >
               {config.navigation_button.label}
             </a>

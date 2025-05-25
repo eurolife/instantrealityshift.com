@@ -1,5 +1,6 @@
 ---
-import ImageMod from "./ImageMod.astro";
+import ImageMod from './ImageMod.astro';
+import { Icon } from 'astro-icon/components';
 
 const testimonial = Astro.props.testimonial;
 const aosDelay = Astro.props.aosDelay as number;
@@ -11,12 +12,18 @@ const aosDelay = Astro.props.aosDelay as number;
   data-aos-delay={aosDelay}
 >
   <div class="flex items-center mb-4">
-    <ImageMod
+    <!-- <ImageMod
       src={testimonial.avatar}
       alt={testimonial.name}
       width={60}
       height={60}
       class="rounded-full w-11 !aspect-square"
+    /> -->
+    <Icon
+      name="l-quote"
+      width={60}
+      height={60}
+      class="text-primary/50 group-hover:text-white transition-all duration-500 opacity-[35%]"
     />
     <div class="ml-3">
       <p class="font-bold">{testimonial.name}</p>

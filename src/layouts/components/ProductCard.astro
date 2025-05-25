@@ -4,8 +4,10 @@ import dateFormat from '@/lib/utils/dateFormat';
 import { plainify } from '@/lib/utils/textConverter';
 import Image from 'astro/components/Image.astro';
 import ImageMod from './ImageMod.astro';
+import PayHipButton from './PayHipButton.astro';
 
-const { title, description, price, item_number, image } = Astro.props.info;
+const { title, description, price, item_number, image, guid } =
+  Astro.props.info;
 ---
 
 <article class="rotating-border">
@@ -27,15 +29,29 @@ const { title, description, price, item_number, image } = Astro.props.info;
       />
       <p class="text-text-light mt-4">{description}</p>
 
-      <div class="flex justify-between items-center">
+      <div class="flex justify-between items-center mt-4">
         <span class="font-bold text-lg">£{price}</span>
 
         <a
           href={`https://payhip.com/b/${item_number}`}
-          class="payhip-add-to-cart-button btn-primary"
-          data-theme="blue"
+          class="payhip-add-to-cart-button bg-cartbutton hover:bg-cartbuttonx rounded-full py-1 px-3 cursor-pointer transition duration-300"
+          data-theme="none"
           data-product={item_number}>Add to Cart</a
         >
+
+        <!-- <PayHipButton item_number={item_number} /> -->
+        <!-- <button
+          class="snipcart-add-item bg-cartbutton hover:bg-cartbuttonx rounded-full py-1 px-3 cursor-pointer transition duration-300"
+          data-item-id="wealth-success"
+          data-item-file-guid={guid}
+          data-item-price={price}
+          data-item-description={description}
+          data-item-image={`/images/products/${image}.png`}
+          data-item-name="Wealth and Success"
+          data-item-url="/products"
+        >
+          Add to cart
+        </button> -->
       </div>
     </div>
   </div>
