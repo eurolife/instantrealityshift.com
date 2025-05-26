@@ -1,0 +1,132 @@
+---
+import Base from '@/layouts/Base.astro';
+import PageHeader from '@/partials/PageHeader.astro';
+import type { CollectionEntry } from 'astro:content';
+import { getEntry } from 'astro:content';
+
+const { description, hero, meta_title, title } = (
+  (await getEntry(
+    'companyPageCollection',
+    '-index'
+  )) as CollectionEntry<'companyPageCollection'>
+).data;
+---
+
+<Base title={title} meta_title={meta_title} description={description}>
+  <PageHeader title="Privacy Policy" description="" />
+  <section class="section">
+    <div class="container">
+      <div class="content">
+        <p>
+          At Instant Reality Shift, your privacy is important to us. This
+          Privacy Policy explains how we collect, use, and protect your
+          information when you visit our website or interact with our content
+          and services.
+        </p>
+        <hr />
+        <p class="text-xl"><strong>1. What Information We Collect</strong></p>
+        <p>
+          We collect personal information only when it's voluntarily provided,
+          such as when you:
+        </p>
+        <ul>
+          <li>Subscribe to our email list</li>
+          <li>Fill out a contact or request form</li>
+          <li>Purchase or download an audio product</li>
+        </ul>
+        <p><strong>This may include:</strong></p>
+        <ul>
+          <li>Your name and email address</li>
+          <li>
+            Payment details (handled securely through Stripe, Payhip, or another
+            processor — we do not store this data
+          </li>
+          <li>Any messages or requests you submit via contact forms</li>
+        </ul>
+        <hr />
+        <p class="text-xl"><strong>2. How We Use Your Information</strong></p>
+        <p>We use the information you provide to:</p>
+        <ul>
+          <li>Deliver the audio products and content you've requested</li>
+          <li>
+            Send you email updates, helpful content, and special offers (only if
+            you've opted in)
+          </li>
+          <li>Respond to your questions or custom audio requests</li>
+          <li>Improve our offerings based on user interest and feedback</li>
+        </ul>
+        <p>
+          We will <strong
+            >never sell, rent, or share your personal information</strong
+          > with third parties for marketing purposes.
+        </p>
+        <hr />
+        <p class="text-xl"><strong>3. Email Marketing</strong></p>
+        <p>
+          If you subscribe to our list, your email address will be used to send
+          you updates, promotional offers, and relevant inspiration related to
+          our audio products and brand. You can unsubscribe at any time by
+          clicking the <strong>unsubscribe</strong> link in any email.
+        </p>
+        <p>
+          Our email list is managed via <strong>Mailchimp</strong>, which
+          adheres to strict security and privacy standards.
+        </p>
+        <hr />
+        <p class="text-xl"><strong>4. Payment and Digital Downloads</strong></p>
+        <p>
+          We may use trusted third-party platforms such as Payhip or Stripe to
+          securely process payments and deliver digital downloads. Your
+          financial information is never stored on our site and is handled by
+          those platforms in accordance with their own privacy policies.
+        </p>
+        <hr />
+        <p class="text-xl">
+          <strong>5. Contact Forms and Data Requests</strong>
+        </p>
+        <p>
+          Our contact form may be powered by <span>123FormBuilder</span>. Any
+          information you submit through this form is securely stored and used
+          only to respond to your inquiry.
+        </p>
+        <hr />
+        <p class="text-xl"><strong>6. Cookies and Analytics</strong></p>
+        <p>
+          We may use cookies and simple analytics tools (like Google Analytics
+          or similar) to understand how visitors use our website and to improve
+          user experience. You can disable cookies in your browser settings if
+          you prefer.
+        </p>
+        <hr />
+        <p class="text-xl"><strong>7. Your Rights</strong></p>
+        <p>You have the right to:</p>
+        <ul>
+          <li>Request access to the personal data we hold about you</li>
+          <li>Ask us to correct or delete your information</li>
+          <li>Opt out of marketing communications at any time</li>
+        </ul>
+        <p>
+          To make a request, simply email us at: info(at)instantrealityshift.com
+        </p>
+
+        <hr />
+        <p class="text-xl"><strong>8. Changes to This Policy</strong></p>
+        <p>
+          We may update this Privacy Policy occasionally to reflect changes to
+          our practices or services. The most current version will always be
+          available on this page.
+        </p>
+
+        <hr />
+        <p class="text-xl"><strong>9. Contact Us</strong></p>
+        <p>
+          If you have any questions about this Privacy Policy or how we handle
+          your data, please contact us at:
+          <br /><br />
+          📧 info(at)instantrealityshift.com<br />
+          🌐 https://instantrealityshift.com
+        </p>
+      </div>
+    </div>
+  </section>
+</Base>

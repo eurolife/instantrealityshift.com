@@ -1,0 +1,145 @@
+---
+import Base from '@/layouts/Base.astro';
+import PageHeader from '@/partials/PageHeader.astro';
+import type { CollectionEntry } from 'astro:content';
+import { getEntry } from 'astro:content';
+
+const { description, hero, meta_title, title } = (
+  (await getEntry(
+    'companyPageCollection',
+    '-index'
+  )) as CollectionEntry<'companyPageCollection'>
+).data;
+---
+
+<Base title={title} meta_title={meta_title} description={description}>
+  <PageHeader title="Terms & Conditions" description="" />
+  <section class="section">
+    <div class="container">
+      <div class="content">
+        <p>
+          Welcome to <strong>InstantRealityShift.com</strong>. By accessing or
+          using this website and purchasing our audio products, you agree to be
+          bound by the following terms and conditions. Please read them
+          carefully.
+        </p>
+
+        <hr />
+        <p class="text-xl"><strong>1. About Instant Reality Shift</strong></p>
+        <p>
+          InstantRealityShift.com provides downloadable audio products designed
+          to support personal growth, mindset transformation, and manifestation
+          through afformations and binaural beats. Our content is created for
+          personal use and is not intended to replace medical, psychological, or
+          financial advice.
+        </p>
+
+        <hr />
+        <p class="text-xl"><strong>2. Use of This Website</strong></p>
+        <p>By using this website, you agree to:</p>
+        <ul>
+          <li>
+            Use the content and services for lawful, personal, and
+            non-commercial purposes
+          </li>
+          <li>
+            Not reproduce, redistribute, or exploit any material without
+            permission
+          </li>
+          <li>
+            Respect the intellectual property rights of Instant Reality Shift
+            and its creators
+          </li>
+          <li>
+            Not attempt to interfere with the website's performance, security,
+            or functionality
+          </li>
+        </ul>
+
+        <hr />
+        <p class="text-xl">
+          <strong>3. Digital Products and Downloads</strong>
+        </p>
+        <p>
+          All audio products are sold as <strong>digital downloads</strong>.
+        </p>
+        <p><strong>Please note:</strong></p>
+        <ul>
+          <li>
+            Due to the nature of digital goods, <strong
+              >all sales are final</strong
+            >. We do not offer refunds or exchanges after purchase unless there
+            is a technical issue preventing access.
+          </li>
+          <li>
+            You are granted a <strong>personal, non-transferable license</strong
+            > to use the audio for your own private use only.
+          </li>
+          <li>
+            You may not copy, resell, distribute, or publicly share the content.
+          </li>
+        </ul>
+        <p>
+          If you encounter any download or access issues, please contact us and
+          we'll be happy to help.
+        </p>
+
+        <hr />
+        <p class="text-xl"><strong>4. Disclaimer</strong></p>
+        <p>
+          Our audio content is designed to support inner transformation and
+          mindset shifts, but we make no guarantees regarding specific outcomes.
+          Results may vary for each individual.
+        </p>
+        <p>
+          Our content does <strong>not</strong> constitute professional medical,
+          psychological, or financial advice. If you have concerns related to your
+          health, mental well-being, or finances, please consult a qualified professional.
+        </p>
+
+        <hr />
+        <p class="text-xl"><strong>5. Email Subscriptions</strong></p>
+        <p>
+          By signing up for our email list, you consent to receive messages from
+          us including updates, content, and occasional promotions. You may
+          unsubscribe at any time by clicking the unsubscribe link in any email.
+        </p>
+
+        <hr />
+        <p class="text-xl"><strong>6. Intellectual Property</strong></p>
+        <p>
+          All content on this site—including audio files, text, graphics,
+          branding, and logo—is the intellectual property of Instant Reality
+          Shift and its creator. Unauthorized use or reproduction of this
+          content is strictly prohibited.
+        </p>
+
+        <hr />
+        <p class="text-xl"><strong>7. Changes to These Terms</strong></p>
+        <p>
+          We may update these Terms and Conditions from time to time. Any
+          changes will take effect immediately upon being posted on this page.
+          It's your responsibility to review this page regularly for updates.
+        </p>
+
+        <hr />
+        <p class="text-xl"><strong>8. Governing Law</strong></p>
+        <p>
+          These Terms shall be governed by and interpreted in accordance with
+          the laws of the United Kingdom, without regard to its conflict of law
+          principles.
+        </p>
+
+        <hr />
+        <p class="text-xl"><strong>8. Governing Law</strong></p>
+        <p>
+          If you have any questions about this Privacy Policy or how we handle
+          your data, please contact us at:
+          <br /><br />
+          📧 info(at)instantrealityshift.com<br />
+          🌐 https://instantrealityshift.com
+        </p>
+      </div>
+    </div>
+  </section>
+</Base>
