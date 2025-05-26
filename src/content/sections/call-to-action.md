@@ -9,6 +9,6 @@ button:
   label: 'Explore Audios'
   link: '/products'
 shapes:
-  - image: '/images/shapes/cta_shape.png'
-  - image: '/images/shapes/cta_shape_1.png'
+  - image: '/images/brain.png'
+  - image: '/images/sound.png'
 ---

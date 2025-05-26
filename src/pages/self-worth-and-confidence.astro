@@ -1,0 +1,23 @@
+---
+import Base from '@/layouts/Base.astro';
+import product from '@/config/product-categories.json';
+import ProductCard from '@/components/ProductCard.astro';
+import PageHeader from '@/partials/PageHeader.astro';
+import { filterProducts } from '@/helpers/FilterProducts';
+---
+
+<Base>
+  <PageHeader
+    title="Self-Worth and Confidence"
+    description="Reconnect with your true power and inner knowing. These audio tracks use transformative afformations and supportive binaural beats to help dissolve self-doubt, strengthen your sense of worth, and boost authentic confidence. Each session is created to help you stand in your truth, trust yourself fully, and show up as the empowered version of you—bold, radiant, and unshakable."
+  />
+
+  <section class="section">
+    <div class="container">
+      <div class="mt-8 grid md:grid-cols-3 gap-4 items-stretch">
+        {!filterProducts(3).length && <p class="my-8">Audios coming soon!</p>}
+        {filterProducts(3).map((item) => <ProductCard info={item} />)}
+      </div>
+    </div>
+  </section>
+</Base>

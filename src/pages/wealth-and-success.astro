@@ -1,0 +1,23 @@
+---
+import Base from '@/layouts/Base.astro';
+import product from '@/config/product-categories.json';
+import ProductCard from '@/components/ProductCard.astro';
+import PageHeader from '@/partials/PageHeader.astro';
+import { filterProducts } from '@/helpers/FilterProducts';
+---
+
+<Base>
+  <PageHeader
+    title="Wealth and Success"
+    description="Step into alignment with abundance. These audio tracks are crafted to reprogram limiting beliefs around money, success, and self-worth using powerful afformations and binaural beats meditation music. Whether you're manifesting financial flow, business breakthroughs, or confidence in your path, each track is designed to help you feel empowered, worthy, and magnetic to opportunity."
+  />
+
+  <section class="section">
+    <div class="container">
+      <div class="mt-8 grid md:grid-cols-3 gap-4 items-stretch">
+        {!filterProducts(1).length && <p class="my-8">Audios coming soon!</p>}
+        {filterProducts(1).map((item) => <ProductCard info={item} />)}
+      </div>
+    </div>
+  </section>
+</Base>

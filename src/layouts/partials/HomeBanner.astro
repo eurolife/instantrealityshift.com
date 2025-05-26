@@ -38,7 +38,7 @@ const { head, button, image, quote, title } = homeBanner?.data;
               {
                 quote && (
                   <p
-                    class="text-xl md:text-3xl text-text/70"
+                    class="text-xl md:text-3xl text-text/90"
                     set:html={markdownify(quote)}
                   />
                 )
@@ -59,6 +59,15 @@ const { head, button, image, quote, title } = homeBanner?.data;
               <canvas
                 class="absolute inset-0 w-full h-full overflow-hidden z-10 heroSporeCanvas"
               ></canvas>
+              <div class="absolute inset-0 grid place-items-center z-20">
+                <ImageMod
+                  src="/images/star.png"
+                  alt="s"
+                  width={600}
+                  height={600}
+                  class="w-[220px] md:w-auto"
+                />
+              </div>
               <div class="absolute inset-0 grid place-items-center">
                 <div
                   class="flex items-center justify-center rotate-45 w-full h-full"
@@ -80,7 +89,7 @@ const { head, button, image, quote, title } = homeBanner?.data;
                 </div>
               </div>
               <!-- Rotating Image -->
-              <div class="rotate-infinite relative z-20">
+              <div class="rotate-infinite relative z-30">
                 <ImageMod
                   src={image.src}
                   alt={image.alt}

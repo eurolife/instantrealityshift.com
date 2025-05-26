@@ -1,0 +1,103 @@
+---
+import Base from '@/layouts/Base.astro';
+import AboutCompany from '@/partials/AboutCompany.astro';
+import CallToAction from '@/partials/CallToAction.astro';
+import InvestorBrands from '@/partials/InvestorBrands.astro';
+import OurTeam from '@/partials/OurTeam.astro';
+import PageHeader from '@/partials/PageHeader.astro';
+import type { CollectionEntry } from 'astro:content';
+import { getEntry } from 'astro:content';
+
+const { description, hero, meta_title, title } = (
+  (await getEntry(
+    'whyPageCollection',
+    '-index'
+  )) as CollectionEntry<'whyPageCollection'>
+).data;
+---
+
+<Base title={title} meta_title={meta_title} description={description}>
+  <PageHeader title={hero.title} description={hero.description} />
+  <section class="section">
+    <div class="container">
+      <div class="content">
+        <h2>What Are Afformations?</h2>
+        <p>
+          Afformations are empowering, subconscious-shifting questions designed
+          to gently reprogram your mind by inviting it to search for supportive,
+          aligned answers. Unlike traditional affirmations—which often feel
+          forced or unbelievable—afformations work by asking your brain <span
+            class="italic">why</span
+          > something is already true.
+        </p>
+        <p>
+          The term <strong>"afformation"</strong> was coined by author and speaker
+          <strong>Noah St. John</strong>, who noticed that repeating
+          affirmations like <span class="italic">“I am wealthy”</span> or <span
+            class="italic">“I am loved”</span
+          > often created inner resistance. If your subconscious mind doesn't believe
+          a statement, it may silently argue with it, making the affirmation feel
+          hollow or ineffective.
+        </p>
+        <p>
+          So he asked a simple question:<br />
+          <strong>“What if we asked empowering questions instead?”</strong>
+        </p>
+        <p>
+          That question became a method—and that method became the foundation of
+          afformations.
+        </p>
+        <hr />
+        <h2>Why Afformations Are So Much More Effective</h2>
+        <p>
+          Afformations work with your brain's <strong
+            >natural problem-solving function</strong
+          >. When you ask yourself a question like:
+        </p>
+        <p>
+          <span class="italic">“Why is wealth flowing to me so easily?”</span
+          ><br />
+          or<br />
+          <span class="italic"
+            >“How did I become so deeply loved and supported?”</span
+          >
+          <br />
+          <br />
+          …your mind automatically starts looking for answers. It doesn't argue—it
+          gets curious.
+        </p>
+        <p>This is powerful because it:</p>
+        <ul>
+          <li>Bypasses resistance from the subconscious</li>
+          <li>Encourages the brain to focus on positive, supportive beliefs</li>
+          <li>
+            Activates the <strong>Reticular Activating System</strong> (RAS), which
+            helps you notice more opportunities, resources, and aligned situations
+            in daily life
+          </li>
+        </ul>
+        <p>
+          The result? You begin to <span class="italic">feel</span> the truth of
+          your desires. And from that aligned state, your reality begins to shift.
+        </p>
+        <hr />
+        <h2>How We Use Afformations at Instant Reality Shift</h2>
+        <p>
+          At Instant Reality Shift, afformations are the foundation of
+          everything we create. Each audio is designed with care, using precise,
+          emotionally resonant questions that support love, wealth, well-being,
+          clarity, and alignment. We combine these spoken afformations with <strong
+            >binaural beats meditation music</strong
+          >, which helps guide your brain into a deeply receptive state—so the
+          questions land where they matter most: in your subconscious.
+        </p>
+        <p>
+          Afformations don’t just make you feel good. They help you <strong
+            >believe differently</strong
+          >, which is what allows you to <strong>create differently</strong>.
+        </p>
+      </div>
+    </div>
+  </section>
+  <CallToAction />
+</Base>

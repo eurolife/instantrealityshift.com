@@ -1,0 +1,22 @@
+---
+import Base from '@/layouts/Base.astro';
+import ProductCard from '@/components/ProductCard.astro';
+import PageHeader from '@/partials/PageHeader.astro';
+import { filterProducts } from '@/helpers/FilterProducts';
+---
+
+<Base>
+  <PageHeader
+    title="Health & Well-Being"
+    description="Support your body, mind, and energy with healing-focused afformations and restorative binaural beats. These tracks are designed to promote balance, vitality, and inner harmony by shifting subconscious patterns that may affect physical or emotional wellness. Whether you're seeking to boost your energy, strengthen your immune system, or cultivate inner peace, each audio is a gentle yet powerful tool for aligning with your natural state of well-being."
+  />
+
+  <section class="section">
+    <div class="container">
+      <div class="mt-8 grid md:grid-cols-3 gap-4 items-stretch">
+        {!filterProducts(4).length && <p class="my-8">Audios coming soon!</p>}
+        {filterProducts(4).map((item) => <ProductCard info={item} />)}
+      </div>
+    </div>
+  </section>
+</Base>

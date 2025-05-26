@@ -15,7 +15,7 @@
 
 .ph-bg-image::before {
   content: '';
-  @apply absolute inset-0 bg-[url('/images/swirl.svg')] bg-repeat bg-center opacity-70 z-[-10];
+  @apply absolute inset-0 bg-[url('/images/swirl.png')] bg-no-repeat bg-bottom opacity-70 z-[-10];
   background-size: 110%;
 }
 
@@ -25,7 +25,7 @@
 
 .intro-image--header::before {
   content: '';
-  @apply absolute inset-0 bg-[url('/images/swirl.svg')] bg-repeat bg-center opacity-70 z-[-20];
+  @apply absolute inset-0 bg-[url('/images/swirl.png')] bg-repeat bg-center opacity-70 z-[-20];
   background-size: 110%;
 }
 
@@ -43,7 +43,7 @@
 }
 .bg-hero-image::before {
   content: '';
-  @apply absolute inset-0 bg-[url('/images/swirl.svg')] bg-no-repeat bg-cover z-[-20] min-h-[500px] md:bg-size-[100%];
+  @apply absolute inset-0 bg-[url('/images/swirl.png')] bg-no-repeat bg-bottom z-[-20] min-h-[500px] md:bg-size-[100%];
   /* background-size: 100%; */
 }
 /* .bg-hero-image::after {

@@ -1,11 +1,27 @@
-import { glob } from "astro/loaders";
-import { defineCollection, z } from "astro:content";
+import { glob } from 'astro/loaders';
+import { defineCollection, z } from 'astro:content';
 
 // pages collection
 const companyPageCollection = defineCollection({
   loader: glob({
-    pattern: "**/-*.{md,mdx}",
-    base: "src/content/company",
+    pattern: '**/-*.{md,mdx}',
+    base: 'src/content/company',
+  }),
+  schema: z.object({
+    title: z.string(),
+    meta_title: z.string().optional(),
+    description: z.string(),
+    draft: z.boolean(),
+    hero: z.object({
+      title: z.string(),
+      description: z.string(),
+    }),
+  }),
+});
+const whyPageCollection = defineCollection({
+  loader: glob({
+    pattern: '**/-*.{md,mdx}',
+    base: 'src/content/why',
   }),
   schema: z.object({
     title: z.string(),
@@ -21,8 +37,8 @@ const companyPageCollection = defineCollection({
 
 const contactPageCollection = defineCollection({
   loader: glob({
-    pattern: "**/-*.{md,mdx}",
-    base: "src/content/contact",
+    pattern: '**/-*.{md,mdx}',
+    base: 'src/content/contact',
   }),
   schema: z.object({
     title: z.string(),
@@ -38,8 +54,8 @@ const contactPageCollection = defineCollection({
 
 const eventsCollection = defineCollection({
   loader: glob({
-    pattern: "**/*.{md,mdx}",
-    base: "src/content/events",
+    pattern: '**/*.{md,mdx}',
+    base: 'src/content/events',
   }),
   schema: z.object({
     title: z.string(),
@@ -59,8 +75,8 @@ const eventsCollection = defineCollection({
 
 const newsCollection = defineCollection({
   loader: glob({
-    pattern: "**/*.{md,mdx}",
-    base: "src/content/news",
+    pattern: '**/*.{md,mdx}',
+    base: 'src/content/news',
   }),
   schema: z.object({
     title: z.string(),
@@ -81,8 +97,8 @@ const newsCollection = defineCollection({
 
 const resourcesCollection = defineCollection({
   loader: glob({
-    pattern: "**/-*.{md,mdx}",
-    base: "src/content/resources",
+    pattern: '**/-*.{md,mdx}',
+    base: 'src/content/resources',
   }),
   schema: z.object({
     title: z.string(),
@@ -98,7 +114,7 @@ const resourcesCollection = defineCollection({
 
 // Regular Pages collection schema
 const pagesCollection = defineCollection({
-  loader: glob({ pattern: "**/*.{md,mdx}", base: "src/content/pages" }),
+  loader: glob({ pattern: '**/*.{md,mdx}', base: 'src/content/pages' }),
   schema: z.object({
     title: z.string(),
     meta_title: z.string().optional(),
@@ -111,8 +127,8 @@ const pagesCollection = defineCollection({
 // sections collection
 const homeBanner = defineCollection({
   loader: glob({
-    pattern: "home-banner.{md,mdx}",
-    base: "src/content/sections",
+    pattern: 'home-banner.{md,mdx}',
+    base: 'src/content/sections',
   }),
   schema: z.object({
     head: z.string(),
@@ -132,8 +148,8 @@ const homeBanner = defineCollection({
 
 const aboutCompany = defineCollection({
   loader: glob({
-    pattern: "about-company.{md,mdx}",
-    base: "src/content/sections",
+    pattern: 'about-company.{md,mdx}',
+    base: 'src/content/sections',
   }),
   schema: z.object({
     title: z.string(),
@@ -147,8 +163,8 @@ const aboutCompany = defineCollection({
 
 const trustedBrands = defineCollection({
   loader: glob({
-    pattern: "trusted-brands.{md,mdx}",
-    base: "src/content/sections",
+    pattern: 'trusted-brands.{md,mdx}',
+    base: 'src/content/sections',
   }),
   schema: z.object({
     title: z.string(),
@@ -163,8 +179,8 @@ const trustedBrands = defineCollection({
 
 const serviceSummaryCards = defineCollection({
   loader: glob({
-    pattern: "service-summary-cards.{md,mdx}",
-    base: "src/content/sections",
+    pattern: 'service-summary-cards.{md,mdx}',
+    base: 'src/content/sections',
   }),
   schema: z.object({
     title: z.string(),
@@ -180,8 +196,8 @@ const serviceSummaryCards = defineCollection({
 
 const ctaSmall = defineCollection({
   loader: glob({
-    pattern: "call-to-action-small.{md,mdx}",
-    base: "src/content/sections",
+    pattern: 'call-to-action-small.{md,mdx}',
+    base: 'src/content/sections',
   }),
   schema: z.object({
     title: z.string(),
@@ -196,8 +212,8 @@ const ctaSmall = defineCollection({
 
 const cta = defineCollection({
   loader: glob({
-    pattern: "call-to-action.{md,mdx}",
-    base: "src/content/sections/",
+    pattern: 'call-to-action.{md,mdx}',
+    base: 'src/content/sections/',
   }),
   schema: z.object({
     enable: z.boolean(),
@@ -220,8 +236,8 @@ const cta = defineCollection({
 
 const faq = defineCollection({
   loader: glob({
-    pattern: "faq.{md,mdx}",
-    base: "src/content/sections",
+    pattern: 'faq.{md,mdx}',
+    base: 'src/content/sections',
   }),
   schema: z.object({
     head: z.string(),
@@ -237,8 +253,8 @@ const faq = defineCollection({
 
 const howItWorks = defineCollection({
   loader: glob({
-    pattern: "how-it-works.{md,mdx}",
-    base: "src/content/sections",
+    pattern: 'how-it-works.{md,mdx}',
+    base: 'src/content/sections',
   }),
   schema: z.object({
     head: z.string(),
@@ -257,8 +273,8 @@ const howItWorks = defineCollection({
 
 const investors = defineCollection({
   loader: glob({
-    pattern: "investors.{md,mdx}",
-    base: "src/content/sections",
+    pattern: 'investors.{md,mdx}',
+    base: 'src/content/sections',
   }),
   schema: z.object({
     title: z.string(),
@@ -274,8 +290,8 @@ const investors = defineCollection({
 
 const ourTeam = defineCollection({
   loader: glob({
-    pattern: "our-team.{md,mdx}",
-    base: "src/content/sections",
+    pattern: 'our-team.{md,mdx}',
+    base: 'src/content/sections',
   }),
   schema: z.object({
     title: z.string(),
@@ -292,8 +308,8 @@ const ourTeam = defineCollection({
 
 const services = defineCollection({
   loader: glob({
-    pattern: "services.{md,mdx}",
-    base: "src/content/sections",
+    pattern: 'services.{md,mdx}',
+    base: 'src/content/sections',
   }),
   schema: z.object({
     serviceList: z.array(
@@ -320,8 +336,8 @@ const services = defineCollection({
 
 const testimonial = defineCollection({
   loader: glob({
-    pattern: "testimonial.{md,mdx}",
-    base: "src/content/sections",
+    pattern: 'testimonial.{md,mdx}',
+    base: 'src/content/sections',
   }),
   schema: z.object({
     head: z.string(),
@@ -341,8 +357,8 @@ const testimonial = defineCollection({
 
 const whyUs = defineCollection({
   loader: glob({
-    pattern: "why-us.{md,mdx}",
-    base: "src/content/sections",
+    pattern: 'why-us.{md,mdx}',
+    base: 'src/content/sections',
   }),
   schema: z.object({
     head: z.string(),
@@ -359,6 +375,7 @@ const whyUs = defineCollection({
 export const collections = {
   // pages
   companyPageCollection,
+  whyPageCollection,
   contactPageCollection,
   pages: pagesCollection,
   events: eventsCollection,

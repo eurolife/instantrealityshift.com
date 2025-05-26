@@ -16,7 +16,7 @@
       "text_color": {
         "text": "#F0F0F0",
         "text-dark": "#000000",
-        "text-light": "#828282"
+        "text-light": "#999"
       }
     }
   },
@@ -25,6 +25,6 @@
       "primary": "Figtree:wght@400;500;600",
       "primary_type": "sans-serif"
     },
-    "font_size": { "base": "16", "scale": "1.250" }
+    "font_size": { "base": "17", "scale": "1.250" }
   }
 }

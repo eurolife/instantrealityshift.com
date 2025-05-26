@@ -1,0 +1,30 @@
+---
+import Base from '@/layouts/Base.astro';
+import PageHeader from '@/partials/PageHeader.astro';
+import type { CollectionEntry } from 'astro:content';
+import { getEntry } from 'astro:content';
+
+const { description, hero, meta_title, title } = (
+  (await getEntry(
+    'companyPageCollection',
+    '-index'
+  )) as CollectionEntry<'companyPageCollection'>
+).data;
+---
+
+<Base title={title} meta_title={meta_title} description={description}>
+  <PageHeader title="Success" description="" />
+  <section class="section">
+    <div class="container">
+      <div class="content text-center">
+        <p class="text-lg">Your subscription to our list has been confirmed.</p>
+        <p>
+          Thank you for subscribing! Look out for news and updates. Make sure to
+          whitelist instantrealityshift.com to prevent your emails to fall into
+          your spam or junk folders. Unsubscribe at any time by clicking the
+          'unsubscribe' link in the footer of our emails.
+        </p>
+      </div>
+    </div>
+  </section>
+</Base>
