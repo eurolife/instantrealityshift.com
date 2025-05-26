@@ -3,6 +3,8 @@ import menu from '@/config/menu.json';
 import config from '@/config/config.json';
 import Logo from '@/components/Logo.astro';
 import RightArrowBtn from '@/components/RightArrowBtn.astro';
+import PlaySample from '@/components/PlaySample.astro';
+import PlaySampleMob from '@/components/PlaySampleMob.astro';
 
 export interface ChildNavigationLink {
   name: string;
@@ -146,6 +148,10 @@ export interface NavigationLink {
           </li>
         ))
       }
+      <li class="inline-block lg:hidden mt-4 lg:mt-0">
+        <PlaySampleMob />
+      </li>
+
       {
         config.navigation_button && config.navigation_button.enable && (
           <li class="inline-block lg:hidden mt-4 lg:mt-0">
@@ -161,6 +167,11 @@ export interface NavigationLink {
         )
       }
     </ul>
+    <div
+      class="order-1 ml-auto hidden lg:flex items-center md:order-2 lg:ml-0 mr-8"
+    >
+      <PlaySample />
+    </div>
 
     {
       config.navigation_button && config.navigation_button.enable && (

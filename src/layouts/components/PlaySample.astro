@@ -1,0 +1,66 @@
+---
+// Props: src is the audio file, icons assumed to be in /images/
+const { src = '/audio/sample.mp3' } = Astro.props;
+---
+
+<div class="audio-player">
+  <audio id="audio-element" src={src}></audio>
+  <button id="play-toggle" aria-label="Toggle audio" class="flex items-center">
+    <img
+      id="player-icon"
+      class="player-icon"
+      src="/images/play.png"
+      alt="Play"
+      width="32"
+      height="32"
+    />
+    <span class="ml-2 text-sm font-bold">Play sample</span>
+  </button>
+</div>
+
+<script is:inline>
+  var audio = document.getElementById('audio-element');
+  var button = document.getElementById('play-toggle');
+  var icon = document.getElementById('player-icon');
+
+  var isPlaying = false;
+
+  button.addEventListener('click', (e) => {
+    if (!isPlaying) {
+      audio.play();
+      icon.src = '/images/pause.png';
+      icon.alt = 'Pause';
+    } else {
+      audio.pause();
+      icon.src = '/images/play.png';
+      icon.alt = 'Play';
+    }
+    isPlaying = !isPlaying;
+  });
+
+  audio.addEventListener('ended', () => {
+    icon.src = '/images/play.png';
+    icon.alt = 'Play';
+    isPlaying = false;
+  });
+</script>
+
+<style>
+  .audio-player {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  img {
+    width: 32px;
+    height: 32px;
+  }
+</style>
