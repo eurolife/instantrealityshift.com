@@ -1,6 +1,6 @@
 ---
 // Props: src is the audio file, icons assumed to be in /images/
-const { src = '/audio/sample.mp3' } = Astro.props;
+const { src = '/audio/sample.mp3', title = 'Play sample' } = Astro.props;
 ---
 
 <div class="audio-player">
@@ -14,7 +14,7 @@ const { src = '/audio/sample.mp3' } = Astro.props;
       width="32"
       height="32"
     />
-    <span class="ml-2 text-sm font-bold">Play sample</span>
+    <span class="ml-2 font-bold">{title}</span>
   </button>
 </div>
 
@@ -26,6 +26,7 @@ const { src = '/audio/sample.mp3' } = Astro.props;
   var isPlaying = false;
 
   button.addEventListener('click', (e) => {
+    console.log('click');
     if (!isPlaying) {
       audio.play();
       icon.src = '/images/pause.png';
