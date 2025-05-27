@@ -1,12 +1,13 @@
 ---
-import { markdownify } from "@/lib/utils/textConverter";
-import type { CollectionEntry } from "astro:content";
-import { getEntry } from "astro:content";
+import ImageMod from '@/components/ImageMod.astro';
+import { markdownify } from '@/lib/utils/textConverter';
+import type { CollectionEntry } from 'astro:content';
+import { getEntry } from 'astro:content';
 
 const aboutCompany = (await getEntry(
-  "aboutCompany",
-  "about-company"
-)) as CollectionEntry<"aboutCompany">;
+  'aboutCompany',
+  'about-company'
+)) as CollectionEntry<'aboutCompany'>;
 
 const { title, descriptionList } = aboutCompany?.data;
 ---
@@ -14,12 +15,21 @@ const { title, descriptionList } = aboutCompany?.data;
 <section class="section">
   <div class="container">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
-      <div class="xl:mr-32">
+      <div class="xl:mr-32 text-center">
         <h2
           set:html={markdownify(title)}
           data-aos="fade-up-sm"
           data-aos-delay="100"
         />
+        <div class="flex justify-center mt-4 lg:mt-8">
+          <ImageMod
+            src="/images/me.png"
+            alt="Paula"
+            width={300}
+            height={300}
+            class="rounded-full"
+          />
+        </div>
       </div>
       <div>
         <ul
@@ -31,7 +41,7 @@ const { title, descriptionList } = aboutCompany?.data;
             descriptionList &&
               descriptionList.length &&
               descriptionList.map((item) => (
-                <li class="text-text/80text-lg">
+                <li class="text-text/80 text-lg">
                   <p set:html={markdownify(item.title)} />
                 </li>
               ))

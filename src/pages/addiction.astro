@@ -14,8 +14,13 @@ import { filterProducts } from '@/helpers/FilterProducts';
 
   <section class="section">
     <div class="container">
-      <div class="mt-8 grid md:grid-cols-3 gap-4 items-stretch">
-        {!filterProducts(5).length && <p class="my-8">Audios coming soon!</p>}
+      <p>Each track is about 30 minutes long.</p>
+      <div class="mt-8 grid md:grid-cols-2 xl:grid-cols-3 gap-4 items-stretch">
+        {
+          !filterProducts(5).length && (
+            <p class="my-8 italic">Audios coming soon!</p>
+          )
+        }
         {filterProducts(5).map((item) => <ProductCard info={item} />)}
       </div>
     </div>

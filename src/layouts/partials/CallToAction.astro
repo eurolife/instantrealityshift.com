@@ -1,13 +1,13 @@
 ---
-import GradientTitle from "@/components/GradientTitle.astro";
-import ImageMod from "@/components/ImageMod.astro";
-import RightArrowBtn from "@/components/RightArrowBtn.astro";
-import { markdownify } from "@/lib/utils/textConverter";
-import type { CollectionEntry } from "astro:content";
-import { getEntry } from "astro:content";
+import GradientTitle from '@/components/GradientTitle.astro';
+import ImageMod from '@/components/ImageMod.astro';
+import RightArrowBtn from '@/components/RightArrowBtn.astro';
+import { markdownify } from '@/lib/utils/textConverter';
+import type { CollectionEntry } from 'astro:content';
+import { getEntry } from 'astro:content';
 
 const { head, title, description, button, shapes } = (
-  (await getEntry("cta", "call-to-action")) as CollectionEntry<"cta">
+  (await getEntry('cta', 'call-to-action')) as CollectionEntry<'cta'>
 ).data;
 ---
 
@@ -15,7 +15,7 @@ const { head, title, description, button, shapes } = (
   <div class="container">
     <div class="xl:px-6">
       <div
-        class="px-12 py-32 rounded-2xl border border-border/50 bg-light/50 mx-auto isolate overflow-hidden bg-cta-image"
+        class="px-6 lg:px-12 py-32 rounded-2xl border border-border/50 bg-light/50 mx-auto isolate overflow-hidden bg-cta-image"
       >
         <div
           class="absolute left-1/2 -translate-x-1/2 md:translate-y-[65%] aspect-square w-full bottom-0 z-10"
@@ -97,10 +97,10 @@ const { head, title, description, button, shapes } = (
 </section>
 
 <script>
-  import { sporeCanvas } from "@/lib/utils/particleCanvas";
+  import { sporeCanvas } from '@/lib/utils/particleCanvas';
 
-  document.addEventListener("astro:page-load", () => {
-    const targetElementClassName = "#ctaCanvas";
+  document.addEventListener('astro:page-load', () => {
+    const targetElementClassName = '#ctaCanvas';
     const particleCount = 150;
     const particleMinSize = 0.2;
     const particleMaxSize = 3;

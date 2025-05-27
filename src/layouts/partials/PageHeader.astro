@@ -10,12 +10,12 @@ const {
 }: { title?: string; description?: string; playSample?: boolean } = Astro.props;
 ---
 
-<section {...props} class="pb-14 lg:pb-24">
+<section {...props} class="pb-4 lg:pb-12">
   <div class="ph-bg-image">
     <div class="container text-center">
-      <div class="px-8 py-16 lg:pt-20 lg:pb-20">
+      <div class="px-2 py-16 lg:pt-20 lg:pb-20">
         <h1
-          class="text-h2 lg:text-hero"
+          class="text-h3 lg:text-hero"
           set:html={humanize(title)}
           data-aos="fade-up-sm"
           data-aos-delay="100"

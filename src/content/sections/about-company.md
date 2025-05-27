@@ -1,6 +1,8 @@
 ---
-title: A new way to manifest—backed by intention, frequency, and subconscious alignment.
+title: Meet the Creator Behind Instant Reality Shift
 descriptionList:
-  - title: 'At Instant Reality Shift, we create high-vibration audio tracks designed to help you align with the reality you truly desire—faster and more effortlessly. Our audio sessions combine the power of afformations—transformational questions that gently rewire your subconscious—with the deeply calming and activating effects of binaural beats meditation music. This combination works on multiple energetic levels to shift thought patterns, open your receptivity, and guide you into emotional and vibrational alignment with love, wealth, health, and more. '
-  - title: 'Each track is crafted with focused intention and care. We don’t use generic affirmations or stock sound. Instead, we carefully write each afformation to speak directly to the subconscious in a way that encourages curiosity, openness, and natural belief. We then pair these with specifically tuned binaural frequencies to bring your brain into optimal states for transformation—like alpha for relaxed focus, or theta for deep subconscious access. Every layer of music is selected and refined to support emotional resonance and energetic flow. The result is an immersive experience that feels good to listen to—and even better when it starts to shift your outer world to match your inner alignment. '
+  - title: "Hi, I'm Paula, the creator of Instant Reality Shift. I'm deeply passionate about helping others transform their inner world so they can experience real, lasting change in their outer reality."
+  - title: 'This space was born from my own journey of personal growth, spiritual awakening, and a desire to combine powerful tools like afformations, binaural beats, and intentional energy work into something that could truly support others. I believe that when we shift the way we think and feel — even subtly — our entire reality begins to change.'
+  - title: 'Each audio you’ll find here is thoughtfully crafted to help you reprogram limiting beliefs, raise your vibration, and align with what you truly desire — whether it’s love, wealth, health, or success.'
+  - title: 'I’m so grateful you’re here. <strong>Let’s shift together.</strong>'
 ---

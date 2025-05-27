@@ -20,7 +20,8 @@ const { categories } = product;
       <section class="section">
         <div class="container">
           <h2>{category.title}</h2>
-          <div class="mt-8 grid md:grid-cols-3 gap-4 items-stretch">
+
+          <div class="mt-8 grid gap-4 items-stretch md:grid-cols-2 xl:grid-cols-3">
             {!filterProducts(category.id).length && (
               <p class="my-8">Audios coming soon!</p>
             )}

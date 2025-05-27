@@ -27,7 +27,7 @@ const { footer }: { footer: Footer } = menu;
   <div class="pb-20 xl:pb-32 xl:px-6">
     <div class="flex flex-col gap-20 md:flex-row justify-between">
       <!-- LEFT SIDE -->
-      <div class="flex gap-20 lg:gap-40">
+      <div class="lg:flex gap-20 lg:gap-40">
         {
           footer.company && footer.company.length > 0 && (
             <div data-aos="fade-right-sm" data-aos-delay="100">
@@ -50,8 +50,12 @@ const { footer }: { footer: Footer } = menu;
         }
         {
           footer.others && footer.others.length > 0 && (
-            <div data-aos="fade-right-sm" data-aos-delay="200">
-              <h3 class="text-sm text-text-light mb-10 uppercase">Products</h3>
+            <div
+              data-aos="fade-right-sm"
+              data-aos-delay="200"
+              class="mt-12 lg:mt-0"
+            >
+              <h3 class="text-sm text-text-light mb-10 uppercase">Audios</h3>
               <ul>
                 {footer.others.map((item) => (
                   <li class="mb-2">
