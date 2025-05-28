@@ -12,14 +12,15 @@
     },
     {
       "id": 3,
-      "slug": "self-worth-and-confidence",
-      "title": "Self Confidence and Self Love"
-    },
-    {
-      "id": 4,
       "slug": "health",
       "title": "Health and Well-Being"
     },
+    {
+      "id": 4,
+      "slug": "self-worth-and-confidence",
+      "title": "Self Confidence and Self Love"
+    },
+
     {
       "id": 5,
       "slug": "addiction",

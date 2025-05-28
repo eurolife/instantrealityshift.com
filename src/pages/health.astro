@@ -17,11 +17,11 @@ import { filterProducts } from '@/helpers/FilterProducts';
       <p>Each track is about 30 minutes long.</p>
       <div class="mt-8 grid md:grid-cols-2 xl:grid-cols-3 gap-4 items-stretch">
         {
-          !filterProducts(4).length && (
+          !filterProducts(3).length && (
             <p class="my-8 italic">Audios coming soon!</p>
           )
         }
-        {filterProducts(4).map((item) => <ProductCard info={item} />)}
+        {filterProducts(3).map((item) => <ProductCard info={item} />)}
       </div>
     </div>
   </section>

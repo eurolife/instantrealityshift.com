@@ -9,6 +9,14 @@
       "image": "wealth-success"
     },
     {
+      "category": 1,
+      "title": "Unexpected Money",
+      "item_number": "VcvjO",
+      "description": "Attract surprise income with this powerful audio track. Binaural beats, meditative music, and afformations work together to align your energy with receiving unexpected money—effortlessly.",
+      "price": "10",
+      "image": "unexpected-money"
+    },
+    {
       "category": 2,
       "title": "Your Ideal Relationship",
       "item_number": "6BgeW",
@@ -31,6 +39,14 @@
       "description": "Attract love and romance effortlessly with this magnetic audio track combining heart-centered afformations and gentle binaural beats. Tune in to shift your vibration, awaken self-worth, and draw in the romantic connection you desire.",
       "price": "10",
       "image": "romance"
+    },
+    {
+      "category": 3,
+      "title": "Weight Loss",
+      "item_number": "nWrsd",
+      "description": "Rewire your mind for a healthier, lighter you. This audio combines soothing binaural beats with empowering afformations to help you naturally choose nourishing foods, stay motivated, and release excess weight with ease.",
+      "price": "10",
+      "image": "weight-loss"
     }
   ]
 }
