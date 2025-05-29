@@ -47,6 +47,14 @@
       "description": "Rewire your mind for a healthier, lighter you. This audio combines soothing binaural beats with empowering afformations to help you naturally choose nourishing foods, stay motivated, and release excess weight with ease.",
       "price": "10",
       "image": "weight-loss"
+    },
+    {
+      "category": 4,
+      "title": "Release Imposter Syndrome",
+      "item_number": "CzeLR",
+      "description": "This empowering audio is designed to gently dissolve imposter syndrome and awaken your inner confidence. With calming binaural beats and transformational afformations, it helps rewire limiting beliefs and align you with your true worth—so you can feel secure, capable, and ready to step fully into your purpose.",
+      "price": "10",
+      "image": "imposter-syndrome"
     }
   ]
 }
