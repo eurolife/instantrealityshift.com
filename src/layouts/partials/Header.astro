@@ -80,7 +80,7 @@ export interface NavigationLink {
     <input id="nav-toggle" type="checkbox" class="hidden" title="nav-toggle" />
     <label
       for="nav-toggle"
-      class="order-3 cursor-pointer flex items-center lg:hidden text-white/70 lg:order-1"
+      class="order-3 cursor-pointer flex items-center lg:hidden text-white/70 lg:order-1 relative md:z-60"
     >
       <div class="space-y-3 w-6 -translate-y-[20%]" id="show-button">
         <title class="hidden">Menu Open</title>
@@ -100,7 +100,7 @@ export interface NavigationLink {
     <!-- /navbar toggler : MOBILE ONLY -->
     <ul
       id="nav-menu"
-      class="lg:hidden navbar-nav shadow-inset shadow-shadow/30 lg:shadow-none order-3 hidden lg:order-1 items-center lg:w-auto lg:space-x-2 lg:pb-0 inset-x-0 mx-auto relative z-50"
+      class="lg:hidden navbar-nav shadow-inset shadow-shadow/30 lg:shadow-none order-3 hidden lg:order-1 items-center lg:w-auto lg:space-x-2 lg:pb-0 inset-x-0 mx-auto absolute z-70"
     >
       {
         menu.main.map((item) => (
@@ -179,7 +179,7 @@ export interface NavigationLink {
       )
     }
     <div
-      class="absolute left-0 right-0 mt-40 md:mt-0 flex justify-center w-full lg:justify-end lg:pr-8 z-40 lg:z-1"
+      class="absolute left-0 right-0 mt-44 md:mt-0 flex justify-center w-full md:justify-end md:pr-20 lg:pr-8 z-50 md:z-1"
     >
       <ModalTriggerFreeDl title="Free download" client:load />
     </div>
