@@ -1,5 +1,5 @@
 ---
-head: LIVES SHIFTING
+head: LIVES ARE SHIFTING
 enable: true
 title: 'They Pressed Play — and Everything Began to Shift'
 description: 'These aren’t just audio tracks — they’re energetic catalysts. From attracting soulmate love and unexpected money, to experiencing deep inner calm and clarity, people around the world are using these audios to shift their reality in powerful ways. Read what real listeners have to say about the transformations they’ve experienced.'

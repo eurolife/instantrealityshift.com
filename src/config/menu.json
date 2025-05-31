@@ -22,17 +22,25 @@
           "url": "/self-worth-and-confidence"
         },
         {
-          "name": "Health",
+          "name": "Health and Well-Being",
           "url": "/health"
         },
         {
           "name": "Addiction",
           "url": "/addiction"
+        },
+        {
+          "name": "Custom Audio For YOU",
+          "url": "/custom-audio"
         }
       ]
     },
     {
-      "name": "Why it Really Works",
+      "name": "Custom Audio",
+      "url": "/custom-audio"
+    },
+    {
+      "name": "Why Does This Work?",
       "url": "/why"
     },
     {
@@ -47,11 +55,11 @@
   "footer": {
     "company": [
       {
-        "name": "About Us",
+        "name": "About",
         "url": "/about"
       },
       {
-        "name": "Why it Really Works",
+        "name": "Why Does This Work?",
         "url": "/why"
       },
       {
@@ -85,12 +93,16 @@
         "url": "/self-worth-and-confidence"
       },
       {
-        "name": "Health",
+        "name": "Health and Well-Being",
         "url": "/health"
       },
       {
         "name": "Addiction",
         "url": "/addiction"
+      },
+      {
+        "name": "Custom Audio For YOU",
+        "url": "/custom-audio"
       }
     ]
   }

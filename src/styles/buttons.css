@@ -13,6 +13,17 @@
 .btn-outline-primary {
   @apply border-border text-text hover:bg-black  bg-transparent hover:text-text/80 rounded-full transition-colors duration-500;
 }
-/* .btn-primary.payhip-add-to-cart-button.payhip-blue-styled-button {
-  @apply bg-tertiary py-1 px-2 text-white;
-} */
+
+.fade-background {
+  animation: fadeColor 2s infinite alternate;
+}
+
+/* Keyframes for fading colours */
+@keyframes fadeColor {
+  0% {
+    background-color: #6a0dad; /* purple */
+  }
+  100% {
+    background-color: #1e90ff; /* blue */
+  }
+}

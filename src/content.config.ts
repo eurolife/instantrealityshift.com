@@ -51,6 +51,22 @@ const contactPageCollection = defineCollection({
     }),
   }),
 });
+const customPageCollection = defineCollection({
+  loader: glob({
+    pattern: '**/-*.{md,mdx}',
+    base: 'src/content/custom',
+  }),
+  schema: z.object({
+    title: z.string(),
+    meta_title: z.string().optional(),
+    description: z.string(),
+    draft: z.boolean(),
+    pageHeader: z.object({
+      title: z.string(),
+      subtitle: z.string(),
+    }),
+  }),
+});
 
 const eventsCollection = defineCollection({
   loader: glob({
@@ -377,6 +393,7 @@ export const collections = {
   companyPageCollection,
   whyPageCollection,
   contactPageCollection,
+  customPageCollection,
   pages: pagesCollection,
   events: eventsCollection,
   news: newsCollection,

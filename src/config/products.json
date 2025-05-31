@@ -17,6 +17,14 @@
       "image": "unexpected-money"
     },
     {
+      "category": 1,
+      "title": "Manifest Passive Income",
+      "item_number": "MZpLa",
+      "description": "Unlock the flow of effortless wealth with this powerful audio featuring afformations designed to attract abundant passive income. Set to calming binaural meditation music, this track helps rewire your mindset and align you with new income streams that come easily, naturally, and consistently—even while you sleep. Perfect for daily listening to shift into a state of financial freedom and flow.",
+      "price": "10",
+      "image": "passive-income"
+    },
+    {
       "category": 2,
       "title": "Your Ideal Relationship",
       "item_number": "6BgeW",
@@ -49,12 +57,36 @@
       "image": "weight-loss"
     },
     {
+      "category": 3,
+      "title": "Release Anxiety",
+      "item_number": "0bq7V",
+      "description": "This soothing audio combines calming binaural beats with gentle afformations to help ease anxiety and restore inner peace. Designed to quiet the mind and calm the nervous system, it guides you back to a place of safety, stillness, and emotional balance. Let the questions lead you into a more grounded and peaceful state—naturally and effortlessly.",
+      "price": "10",
+      "image": "anxiety"
+    },
+    {
+      "category": 3,
+      "title": "Improve Sleep",
+      "item_number": "Z3tlB",
+      "description": "Drift into restful sleep with this calming audio that blends soothing binaural music and gentle afformations. These empowering questions help quiet the mind, relax the body, and guide you naturally into deep, restorative rest—so you wake feeling refreshed, balanced, and at peace.",
+      "price": "10",
+      "image": "sleep"
+    },
+    {
       "category": 4,
       "title": "Release Imposter Syndrome",
       "item_number": "CzeLR",
       "description": "This empowering audio is designed to gently dissolve imposter syndrome and awaken your inner confidence. With calming binaural beats and transformational afformations, it helps rewire limiting beliefs and align you with your true worth—so you can feel secure, capable, and ready to step fully into your purpose.",
       "price": "10",
       "image": "imposter-syndrome"
+    },
+    {
+      "category": 5,
+      "title": "Quit Smoking",
+      "item_number": "vGP0V",
+      "description": "This calming audio blends powerful afformations with soothing binaural meditation music to support your journey to a smoke-free life. These transformational questions help reprogram your subconscious, making it easier to release old habits and embrace vibrant health and self-empowerment—naturally and effortlessly.",
+      "price": "10",
+      "image": "quit-smoking"
     }
   ]
 }

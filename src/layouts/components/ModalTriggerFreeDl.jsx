@@ -8,7 +8,7 @@ const ModalTriggerFreeDl = ({ title }) => {
     <>
       <button
         onClick={() => setIsOpen(true)}
-        className="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition cursor-pointer transition duration-300"
+        className="fade-background px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition cursor-pointer transition duration-300"
       >
         {title}
       </button>
@@ -18,6 +18,9 @@ const ModalTriggerFreeDl = ({ title }) => {
           Get your FREE audio download!
         </h2>
         <p className="text-gray-700">
+          Get a 10-minute sample of our 'Improve your Sleep' audio and audio
+          guide! <br />
+          <br />
           All you need to do is provide your email address and we will send you
           a link to your FREE life-changing audio download.
         </p>
@@ -67,10 +70,6 @@ const ModalTriggerFreeDl = ({ title }) => {
                         />
                       </label>
                     </fieldset>
-                    <p className="text-sm text-gray-600 mt-2">
-                      You can unsubscribe at any time by clicking the link in
-                      the footer of our emails.
-                    </p>
                   </div>
                 </div>
                 <input type="hidden" name="tags" value="3053737" />
@@ -98,7 +97,7 @@ const ModalTriggerFreeDl = ({ title }) => {
                     name="subscribe"
                     id="mc-embedded-subscribe"
                     className="button btn bg-tertiary rounded-lg !py-2 text-white hover:bg-gray-800 transition duration-300"
-                    value="Subscribe"
+                    value="Get Your Download"
                   />
                 </div>
               </div>

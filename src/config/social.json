@@ -4,6 +4,11 @@
       "name": "facebook",
       "icon": "FaFacebook",
       "link": "https://www.facebook.com/instantrealityshift"
+    },
+    {
+      "name": "instagram",
+      "icon": "FaInstagram",
+      "link": "https://www.instagram.com/instantrealityshift"
     }
   ]
 }

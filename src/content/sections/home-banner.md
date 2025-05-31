@@ -1,6 +1,6 @@
 ---
 head: 'The Power of QUESTIONS'
-title: 'Shift Your Reality Instantly'
+title: 'Shift Your Reality Effortlessly'
 image:
   src: '/images/shapes/homepage_hero.png'
   alt: 'image alt'

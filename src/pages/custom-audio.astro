@@ -1,0 +1,61 @@
+---
+import Base from '@/layouts/Base.astro';
+import PageHeader from '@/partials/PageHeader.astro';
+import type { CollectionEntry } from 'astro:content';
+import { getEntry } from 'astro:content';
+
+const { title, description, meta_title, pageHeader } = (
+  (await getEntry(
+    'customPageCollection',
+    '-index'
+  )) as CollectionEntry<'customPageCollection'>
+).data;
+---
+
+<Base title={title} meta_title={meta_title} description={description}>
+  <PageHeader title={pageHeader.title} description={pageHeader.subtitle} />
+  <section class="section">
+    <div class="container">
+      <div class="content">
+        <p class="text-xl">
+          <strong
+            >What if you could receive a powerful audio track designed
+            specifically for your unique situation, goals, and emotional
+            journey?</strong
+          >
+        </p>
+        <p>
+          With our <strong>Custom Afformation Audio</strong>, you'll receive a
+          beautifully crafted recording that speaks directly to your
+          needs—whether you're manifesting love, attracting abundance, healing
+          from emotional blocks, building confidence, or releasing anxiety.
+        </p>
+        <p>
+          This isn't a one-size-fits-all solution. It’s a deeply personal audio
+          that combines:
+        </p>
+        <ul>
+          <li>
+            💜 &nbsp; Your personalised afformations (transformational questions
+            tailored to your intention)
+          </li>
+          <li>
+            🎶 &nbsp; Soothing meditation music and binaural frequencies to
+            amplify the effect
+          </li>
+          <li>
+            🌌 &nbsp; A unique energetic vibration aligned with your desired
+            outcome
+          </li>
+        </ul>
+        <p class="text-center text-lg">
+          <strong
+            >This services is coming soon! Please check back for an update. In
+            the meantime, you can <a href="/contact">contact me here</a
+            >.</strong
+          >
+        </p>
+      </div>
+    </div>
+  </section>
+</Base>
