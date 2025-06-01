@@ -1,6 +1,7 @@
 ---
 import GradientTitle from '@/components/GradientTitle.astro';
 import TestimonialCard from '@/components/TestimonialCard.astro';
+import RightArrowBtn from '@/components/RightArrowBtn.astro';
 import type { CollectionEntry } from 'astro:content';
 import { getEntry } from 'astro:content';
 
@@ -16,6 +17,13 @@ const { enable, description, head, testimonials, title } = (
   enable && (
     <section class="section">
       <div class="container overflow-hidden">
+        <div class="mx-auto text-center mb-8 lg:mb-16">
+          <h2 class="text-pinky italic">
+            <strong>
+              What if the shift you desire doesn't have to be hard?
+            </strong>
+          </h2>
+        </div>
         <div class="section-intro text-center lg:col-8 mx-auto">
           <GradientTitle
             title={head}
@@ -46,6 +54,13 @@ const { enable, description, head, testimonials, title } = (
                 );
               })}
           </div>
+        </div>
+        <div class="mx-auto text-center mt-8 lg:mt-16 flex justify-center">
+          <RightArrowBtn
+            link="/products"
+            label="Start transforming your life"
+            className="btn btn-primary mt-4 lg:mt-0 lg:ml-2"
+          />
         </div>
       </div>
     </section>

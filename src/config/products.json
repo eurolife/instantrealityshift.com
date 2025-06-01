@@ -5,7 +5,7 @@
       "title": "Wealth and Success",
       "item_number": "xtErD",
       "description": "Rewire your mind for abundance with this powerful audio track combining wealth-focused afformations and binaural beats designed to align your brain with prosperity. Listen daily to activate confidence, open your energetic flow, and attract success with ease.",
-      "price": "10",
+      "price": "12.95",
       "image": "wealth-success"
     },
     {
@@ -13,7 +13,7 @@
       "title": "Unexpected Money",
       "item_number": "VcvjO",
       "description": "Attract surprise income with this powerful audio track. Binaural beats, meditative music, and afformations work together to align your energy with receiving unexpected money—effortlessly.",
-      "price": "10",
+      "price": "12.95",
       "image": "unexpected-money"
     },
     {
@@ -21,7 +21,7 @@
       "title": "Manifest Passive Income",
       "item_number": "MZpLa",
       "description": "Unlock the flow of effortless wealth with this powerful audio featuring afformations designed to attract abundant passive income. Set to calming binaural meditation music, this track helps rewire your mindset and align you with new income streams that come easily, naturally, and consistently—even while you sleep. Perfect for daily listening to shift into a state of financial freedom and flow.",
-      "price": "10",
+      "price": "12.95",
       "image": "passive-income"
     },
     {
@@ -29,7 +29,7 @@
       "title": "Your Ideal Relationship",
       "item_number": "6BgeW",
       "description": "Open your heart to aligned love with this soothing audio track featuring love-based afformations and gentle binaural beats. Designed to shift your energy, release resistance, and attract deep, meaningful connection.",
-      "price": "10",
+      "price": "12.95",
       "image": "relationship"
     },
     {
@@ -37,7 +37,7 @@
       "title": "Attract Your Soulmate",
       "item_number": "a4UsQ",
       "description": "Call in your soulmate with this heart-opening audio featuring soul-deep afformations and calming binaural beats. Crafted to align your energy with unconditional love, divine timing, and the relationship meant for you.",
-      "price": "10",
+      "price": "12.95",
       "image": "soulmate"
     },
     {
@@ -45,7 +45,7 @@
       "title": "Attract Love and Romance",
       "item_number": "nWrsd",
       "description": "Attract love and romance effortlessly with this magnetic audio track combining heart-centered afformations and gentle binaural beats. Tune in to shift your vibration, awaken self-worth, and draw in the romantic connection you desire.",
-      "price": "10",
+      "price": "12.95",
       "image": "romance"
     },
     {
@@ -53,7 +53,7 @@
       "title": "Weight Loss",
       "item_number": "vITPx",
       "description": "Rewire your mind for a healthier, lighter you. This audio combines soothing binaural beats with empowering afformations to help you naturally choose nourishing foods, stay motivated, and release excess weight with ease.",
-      "price": "10",
+      "price": "12.95",
       "image": "weight-loss"
     },
     {
@@ -61,7 +61,7 @@
       "title": "Release Anxiety",
       "item_number": "0bq7V",
       "description": "This soothing audio combines calming binaural beats with gentle afformations to help ease anxiety and restore inner peace. Designed to quiet the mind and calm the nervous system, it guides you back to a place of safety, stillness, and emotional balance. Let the questions lead you into a more grounded and peaceful state—naturally and effortlessly.",
-      "price": "10",
+      "price": "12.95",
       "image": "anxiety"
     },
     {
@@ -69,15 +69,23 @@
       "title": "Improve Sleep",
       "item_number": "Z3tlB",
       "description": "Drift into restful sleep with this calming audio that blends soothing binaural music and gentle afformations. These empowering questions help quiet the mind, relax the body, and guide you naturally into deep, restorative rest—so you wake feeling refreshed, balanced, and at peace.",
-      "price": "10",
+      "price": "12.95",
       "image": "sleep"
+    },
+    {
+      "category": 3,
+      "title": "Pain Relief",
+      "item_number": "xlAS8",
+      "description": "This calming audio blends powerful afformations (healing questions) with soothing, meditative music to support your body's natural ability to relax, realign, and release tension. Ideal for moments of discomfort, this track is designed to help you feel more ease, softness, and relief—physically, emotionally, and energetically.",
+      "price": "12.95",
+      "image": "pain-relief"
     },
     {
       "category": 4,
       "title": "Release Imposter Syndrome",
       "item_number": "CzeLR",
       "description": "This empowering audio is designed to gently dissolve imposter syndrome and awaken your inner confidence. With calming binaural beats and transformational afformations, it helps rewire limiting beliefs and align you with your true worth—so you can feel secure, capable, and ready to step fully into your purpose.",
-      "price": "10",
+      "price": "12.95",
       "image": "imposter-syndrome"
     },
     {
@@ -85,7 +93,7 @@
       "title": "Quit Smoking",
       "item_number": "vGP0V",
       "description": "This calming audio blends powerful afformations with soothing binaural meditation music to support your journey to a smoke-free life. These transformational questions help reprogram your subconscious, making it easier to release old habits and embrace vibrant health and self-empowerment—naturally and effortlessly.",
-      "price": "10",
+      "price": "12.95",
       "image": "quit-smoking"
     }
   ]

@@ -3,6 +3,9 @@ import Logo from '@/components/Logo.astro';
 import config from '@/config/config.json';
 import menu from '@/config/menu.json';
 import { markdownify } from '@/lib/utils/textConverter';
+import type { ISocial } from '@/components/Social.astro';
+import socials from '@/config/social.json';
+import DynamicIcon from '@/helpers/DynamicIcon';
 
 // Function to replace {year} this from string to year
 function replaceYear(text: string) {
@@ -76,6 +79,25 @@ const { footer }: { footer: Footer } = menu;
       <!-- RIGHT SIDE -->
       <div class="max-w-[325px] lg:w-[325px]">
         <div data-aos="fade-right-sm" data-aos-delay="300">
+          <h3 class="text-sm text-text-light mb-10 uppercase">FOLLOW US</h3>
+          <ul class="flex gap-4 mb-10">
+            {
+              socials.main.map((social: ISocial) => (
+                <li>
+                  <a
+                    aria-label={social.name}
+                    href={social.link}
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="w-10 aspect-square grid place-items-center border border-border hover:border-white transition-colors duration-500 rounded-full"
+                  >
+                    <span class="sr-only">{social.name}</span>
+                    <DynamicIcon className="inline-block" icon={social.icon} />
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
           <h3 class="text-sm text-text-light mb-10 uppercase">
             STAY UP TO DATE
           </h3>

@@ -209,6 +209,23 @@ const serviceSummaryCards = defineCollection({
     ),
   }),
 });
+const categories = defineCollection({
+  loader: glob({
+    pattern: 'categories.{md,mdx}',
+    base: 'src/content/sections',
+  }),
+  schema: z.object({
+    title: z.string(),
+    list: z.array(
+      z.object({
+        title: z.string(),
+        desc: z.string(),
+        logo: z.string(),
+        link: z.string(),
+      })
+    ),
+  }),
+});
 
 const ctaSmall = defineCollection({
   loader: glob({
@@ -404,6 +421,7 @@ export const collections = {
   aboutCompany,
   trustedBrands,
   serviceSummaryCards,
+  categories,
   ctaSmall,
   cta,
   faq,
