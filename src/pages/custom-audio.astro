@@ -1,6 +1,8 @@
 ---
+import ImageMod from '@/components/ImageMod.astro';
 import Base from '@/layouts/Base.astro';
 import PageHeader from '@/partials/PageHeader.astro';
+import RightArrowBtn from '@/components/RightArrowBtn.astro';
 import type { CollectionEntry } from 'astro:content';
 import { getEntry } from 'astro:content';
 
@@ -17,45 +19,92 @@ const { title, description, meta_title, pageHeader } = (
   <section class="section">
     <div class="container">
       <div class="content">
-        <p class="text-xl">
-          <strong
-            >What if you could receive a powerful audio track designed
-            specifically for your unique situation, goals, and emotional
-            journey?</strong
-          >
+        <div class="lg:flex justify-between items-start">
+          <div class="lg:w-1/2 lg:pr-12">
+            <p class="text-xl">
+              <strong
+                >What if you could receive a powerful audio track designed
+                specifically for your unique situation, goals, and emotional
+                journey?</strong
+              >
+            </p>
+            <p class="text-white">
+              With our <strong>Custom Afformation Audio</strong>, you'll receive
+              a beautifully crafted recording that speaks directly to your
+              needs—whether you're manifesting love, attracting abundance,
+              healing from emotional blocks, building confidence, or releasing
+              anxiety.
+            </p>
+            <!-- <p class="text-white">
+              Each audio is lovingly tailored using your own words and
+              intentions, ensuring it resonates deeply with your unique journey.
+              Combined with soothing meditation music and transformational
+              afformations, it becomes a powerful tool to rewire your beliefs,
+              calm your mind, and align your energy with the life you truly want
+              to create.
+            </p> -->
+            <p>
+              <strong
+                >This isn't a one-size-fits-all solution. It's a deeply personal
+                audio that combines:</strong
+              >
+            </p>
+            <ul>
+              <li>
+                Your personalised afformations (transformational questions
+                tailored to your intention)
+              </li>
+              <li>
+                Soothing meditation music and binaural frequencies to amplify
+                the effect
+              </li>
+              <li>
+                A unique energetic vibration aligned with your desired outcome
+              </li>
+            </ul>
+          </div>
+          <ImageMod
+            src="/images/custom-audio.jpg"
+            height={450}
+            width={450}
+            alt="personlised audio"
+            class="rounded-lg mx-auto"
+          />
+        </div>
+
+        <h2>How it Works</h2>
+        <p>
+          <strong>1. Tell Me Your Story</strong>– <a
+            href="https://form.123formbuilder.com/6851393/custom-audio-form"
+            target="_blank"
+            rel="nofollow">Fill out a simple form</a
+          > where you share your current challenge or goal and answer a few questions.
         </p>
         <p>
-          With our <strong>Custom Afformation Audio</strong>, you'll receive a
-          beautifully crafted recording that speaks directly to your
-          needs—whether you're manifesting love, attracting abundance, healing
-          from emotional blocks, building confidence, or releasing anxiety.
+          <strong>2. I Create the Magic</strong>– I'll intuitively write and
+          record your afformations, set to beautiful background music.
         </p>
         <p>
-          This isn't a one-size-fits-all solution. It’s a deeply personal audio
-          that combines:
+          <strong>3. Receive Your Track</strong>– Within 24 - 48 hours, you'll
+          receive your custom audio to download and listen to anytime. I will
+          also include an audio guide (pdf) with helpful tips on maximising the
+          effect.
         </p>
-        <ul>
-          <li>
-            💜 &nbsp; Your personalised afformations (transformational questions
-            tailored to your intention)
-          </li>
-          <li>
-            🎶 &nbsp; Soothing meditation music and binaural frequencies to
-            amplify the effect
-          </li>
-          <li>
-            🌌 &nbsp; A unique energetic vibration aligned with your desired
-            outcome
-          </li>
-        </ul>
-        <p class="text-center text-lg">
-          <strong
-            >This services is coming soon! Please check back for an update. In
-            the meantime, you can <a href="/contact">contact me here</a
-            >.</strong
+        <p class="text-3xl">
+          <strong class="text-pinky"
+            >For a limited time, you can receive your own custom audio for just
+            <span class="text-white">£29.95</span> —an exclusive introductory offer.
+            Don't miss this chance to lock in the special price before it goes up!</strong
           >
         </p>
       </div>
+    </div>
+    <div class="mx-auto text-center mt-8 lg:mt-16 flex justify-center">
+      <RightArrowBtn
+        link="https://form.123formbuilder.com/6851393/custom-audio-form"
+        label="Order Your Custom Audio Now"
+        className="btn btn-primary mt-4 lg:mt-0 lg:ml-2 text-decoration-none"
+      />
     </div>
   </section>
 </Base>

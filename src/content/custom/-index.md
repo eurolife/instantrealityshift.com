@@ -6,5 +6,5 @@ draft: false
 
 pageHeader:
   title: 'Custom Audio Just for You'
-  subtitle: 'A Personalised Soundtrack for the Life You Want to Create'
+  subtitle: 'I’ll create a one-of-a-kind audio track, tailored just for you, designed to support the exact life you’re ready to step into.'
 ---

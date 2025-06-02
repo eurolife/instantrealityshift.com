@@ -20,6 +20,7 @@ const { title, description, price, item_number, image } = Astro.props.info;
         width={600}
         height={600}
         class="rounded w-full"
+        loading="lazy"
       />
       <p class="text-text-light mt-4">{description}</p>
 
