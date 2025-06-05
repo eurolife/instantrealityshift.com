@@ -1,0 +1,37 @@
+---
+import Video from '@/shortcodes/Video';
+---
+
+<div class="relative">
+  <Video
+    width="100%"
+    src="testimonials1.mp4"
+    id="cta-video"
+    poster="images/testimonials1-poster.jpg"
+  />
+  <div
+    id="cta-button"
+    class="hidden absolute left-0 right-0 bottom-16 md:bottom-24 lg:bottom-48 w-full text-center"
+  >
+    <a
+      href="products"
+      class="bg-pinky text-white text-xl md:text-3xl px-4 py-2 md:py-4 rounded-xl shadow-lg transition duration-300 hover:bg-tertiary transition"
+    >
+      EXPLORE OUR AUDIOS &raquo;
+    </a>
+  </div>
+</div>
+
+<script type="module" is:inline>
+  const video = document.getElementById('cta-video');
+  const ctaButton = document.getElementById('cta-button');
+  const showAt = 54; // in seconds
+
+  video.addEventListener('timeupdate', () => {
+    if (video.currentTime >= showAt) {
+      ctaButton.classList.remove('hidden');
+    } else if (!ctaButton.classList.contains('hidden')) {
+      ctaButton.classList.add('hidden');
+    }
+  });
+</script>

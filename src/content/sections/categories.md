@@ -19,7 +19,7 @@ list:
     desc: Support your body, mind, and energy.
     logo: 'health'
     link: 'health'
-  - title: Addiction
+  - title: Overcoming Addictions
     desc: Break free from old patterns and reconnect with your inner strength.
     logo: 'addiction'
     link: 'addiction'

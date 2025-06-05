@@ -89,12 +89,28 @@
       "image": "imposter-syndrome"
     },
     {
+      "category": 4,
+      "title": "Get Your Dream Job",
+      "item_number": "piUOr",
+      "description": "Unlock the career you've been waiting for with this powerful audio of transformational afformations. Designed to shift your mindset and energy, this track helps you align with confidence, worthiness, and the perfect job opportunity. With calming binaural beats and meditative music, it prepares you to walk into any interview with clarity, calm, and presence—so you can smash that job interview and step into the role that’s meant for you.",
+      "price": "12.95",
+      "image": "dream-job"
+    },
+    {
       "category": 5,
       "title": "Quit Smoking",
       "item_number": "vGP0V",
       "description": "This calming audio blends powerful afformations with soothing binaural meditation music to support your journey to a smoke-free life. These transformational questions help reprogram your subconscious, making it easier to release old habits and embrace vibrant health and self-empowerment—naturally and effortlessly.",
       "price": "12.95",
       "image": "quit-smoking"
+    },
+    {
+      "category": 5,
+      "title": "Stop Gambling",
+      "item_number": "lE1f0",
+      "description": "Break Free from Gambling Addiction: Empower your mind with transformational questions designed to dissolve the urges, fears, and emotional patterns behind gambling addiction. This guided audio combines afformations with soothing binaural beats to support lasting freedom, self-control, and inner peace—one powerful listen at a time.",
+      "price": "12.95",
+      "image": "stop-gambling"
     }
   ]
 }

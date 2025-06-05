@@ -9,6 +9,11 @@
       "name": "instagram",
       "icon": "FaInstagram",
       "link": "https://www.instagram.com/instantrealityshift"
+    },
+    {
+      "name": "tiktok",
+      "icon": "FaTiktok",
+      "link": "https://www.tiktok.com/@instantrealityshift"
     }
   ]
 }

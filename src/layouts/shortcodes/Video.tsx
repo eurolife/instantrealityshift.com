@@ -1,16 +1,18 @@
-import React from "react";
+import React from 'react';
 function Video({
-  title,
-  width = 500,
-  height = "auto",
+  title = '',
+  width = '100%',
+  height = 'auto',
   src,
-  ...rest
+  id = '',
+  poster = '',
 }: {
-  title: string;
-  width: number;
-  height: number | "auto";
+  title?: string;
+  width: string;
+  height?: number | 'auto';
   src: string;
-  [key: string]: any;
+  id?: string;
+  poster?: string;
 }) {
   return (
     <video
@@ -18,7 +20,8 @@ function Video({
       width={width}
       height={height}
       controls
-      {...rest}
+      id={id}
+      poster={poster}
     >
       <source
         src={src.match(/^http/) ? src : `/videos/${src}`}

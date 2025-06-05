@@ -31,6 +31,7 @@ const { title, description, price, item_number, image } = Astro.props.info;
           href={`https://payhip.com/b/${item_number}`}
           class="payhip-add-to-cart-button bg-cartbutton hover:bg-cartbuttonx rounded-full py-1 px-3 transition duration-300"
           data-theme="none"
+          onclick="gtagSendEvent()"
           data-product={item_number}>Add to Cart</a
         >
       </div>

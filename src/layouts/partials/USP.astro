@@ -2,6 +2,8 @@
 import GradientTitle from '@/components/GradientTitle.astro';
 import ImageMod from '@/components/ImageMod.astro';
 import RightArrowBtn from '@/components/RightArrowBtn.astro';
+import Video from '@/shortcodes/Video';
+import TestimonialVideo from './TestimonialVideo.astro';
 ---
 
 <section class="section xl:pb-20 overflow-hidden">
@@ -23,7 +25,23 @@ import RightArrowBtn from '@/components/RightArrowBtn.astro';
         energetic catalysts.
       </p>
     </div>
+  </div>
+  <div class="lg:container mx-auto">
+    <div class="mb-12">
+      <TestimonialVideo />
+    </div>
+  </div>
+
+  <div class="container">
     <div class="mb-10 last:mb-0">
+      <div class="flex justify-center mb-8">
+        <GradientTitle
+          title="What are Instant Reality Shift audios?"
+          data-aos="fade-up-sm"
+          data-aos-delay="100"
+        />
+      </div>
+
       <div
         class="flex flex-col-reverse lg:flex-row lg:items-center gap-10 w-full"
       >
@@ -60,11 +78,11 @@ import RightArrowBtn from '@/components/RightArrowBtn.astro';
         <div class="lg:w-[48%]">
           <div class="space-t-20">
             <div class="space-y-6">
-              <GradientTitle
-                title="Why Instant Reality Shift audios?"
+              <!-- <GradientTitle
+                title="What are Instant Reality Shift audios?"
                 data-aos="fade-up-sm"
                 data-aos-delay="100"
-              />
+              /> -->
 
               <h2 data-aos="fade-up-sm" data-aos-delay="150">
                 <!-- Experience the Shift That Affirmations Alone Can't Give You -->
