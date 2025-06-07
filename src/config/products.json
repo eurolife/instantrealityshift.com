@@ -97,6 +97,14 @@
       "image": "dream-job"
     },
     {
+      "category": 4,
+      "title": "Overcome Procrastination",
+      "item_number": "oWnlM",
+      "description": "Break Free from Procrastination. Struggling to get started or stay focused? This powerful 30-minute audio helps rewire your subconscious with empowering questions that spark motivation and action. Backed by calming binaural beats, it's designed to help you shift from stuck to unstoppable—naturally and effortlessly.",
+      "price": "12.95",
+      "image": "procrastination"
+    },
+    {
       "category": 5,
       "title": "Quit Smoking",
       "item_number": "vGP0V",
@@ -111,6 +119,14 @@
       "description": "Break Free from Gambling Addiction: Empower your mind with transformational questions designed to dissolve the urges, fears, and emotional patterns behind gambling addiction. This guided audio combines afformations with soothing binaural beats to support lasting freedom, self-control, and inner peace—one powerful listen at a time.",
       "price": "12.95",
       "image": "stop-gambling"
+    },
+    {
+      "category": 5,
+      "title": "Overcome Sex Addiction",
+      "item_number": "uyaYq",
+      "description": "This 30-minute audio combines powerful afformations with soothing binaural beats meditation music to help rewire your mind and shift your habits at the root. Instead of forcing change through willpower alone, you'll be gently guided by transformative questions that speak to your deeper truth—restoring self-worth, emotional balance, and freedom. Listen daily to begin releasing guilt, cravings, and compulsive patterns, and open the door to healthy, fulfilling relationships—with yourself and others.",
+      "price": "12.95",
+      "image": "sex-addiction"
     }
   ]
 }
