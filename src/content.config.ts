@@ -111,6 +111,28 @@ const newsCollection = defineCollection({
   }),
 });
 
+const productsCollection = defineCollection({
+  loader: glob({
+    pattern: '**/*.{md,mdx}',
+    base: 'src/content/products',
+  }),
+  schema: z.object({
+    title: z.string(),
+    meta_title: z.string().optional(),
+    description: z.string(),
+    date: z.date().optional(),
+    image: z.string().optional(),
+    draft: z.boolean(),
+
+    hero: z
+      .object({
+        title: z.string(),
+        description: z.string(),
+      })
+      .optional(),
+  }),
+});
+
 const resourcesCollection = defineCollection({
   loader: glob({
     pattern: '**/-*.{md,mdx}',
@@ -414,6 +436,7 @@ export const collections = {
   pages: pagesCollection,
   events: eventsCollection,
   news: newsCollection,
+  products: productsCollection,
   resources: resourcesCollection,
 
   // sections
