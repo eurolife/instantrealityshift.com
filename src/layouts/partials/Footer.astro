@@ -112,6 +112,13 @@ const { footer }: { footer: Footer } = menu;
                 target="_self"
                 novalidate=""
               >
+                <input
+                  type="text"
+                  name="website"
+                  tabindex="-1"
+                  autocomplete="off"
+                  style="position: absolute; left: -5000px;"
+                />
                 <div id="mc_embed_signup_scroll">
                   <div class="mc-field-group">
                     <input
@@ -204,3 +211,16 @@ const { footer }: { footer: Footer } = menu;
     </div>
   </div>
 </footer>
+
+<script is:inline>
+  document
+    .getElementById('mc-embedded-subscribe-form')
+    .addEventListener('submit', function (e) {
+      const honeypot = document.querySelector("input[name='website']");
+      if (honeypot && honeypot.value.trim() !== '') {
+        e.preventDefault(); // stop submission
+        console.log('Bot detected. Form not submitted.');
+        return false;
+      }
+    });
+</script>

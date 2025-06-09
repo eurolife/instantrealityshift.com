@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
 
+Sitemap: https://instantrealityshift.com/sitemap-index.xml
+
 Disallow: /api/*
