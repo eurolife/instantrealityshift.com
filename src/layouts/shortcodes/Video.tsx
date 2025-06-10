@@ -22,6 +22,7 @@ function Video({
       controls
       id={id}
       poster={poster}
+      playsInline
     >
       <source
         src={src.match(/^http/) ? src : `/videos/${src}`}
