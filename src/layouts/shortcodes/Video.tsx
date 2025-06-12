@@ -25,7 +25,7 @@ function Video({
       playsInline
     >
       <source
-        src={src.match(/^http/) ? src : `/videos/${src}`}
+        src={src.match(/^https/) ? src : `/videos/${src}`}
         type="video/mp4"
       />
       {title}

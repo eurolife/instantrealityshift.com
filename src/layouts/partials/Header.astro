@@ -3,8 +3,6 @@ import menu from '@/config/menu.json';
 import config from '@/config/config.json';
 import Logo from '@/components/Logo.astro';
 import RightArrowBtn from '@/components/RightArrowBtn.astro';
-import PlaySample from '@/components/PlaySample.astro';
-import PlaySampleMob from '@/components/PlaySampleMob.astro';
 import ModalTriggerFreeDl from '@/components/ModalTriggerFreeDl.jsx';
 
 export interface ChildNavigationLink {
@@ -181,7 +179,7 @@ export interface NavigationLink {
     <div
       class="absolute left-0 right-0 mt-44 md:mt-0 flex justify-center w-full md:justify-end md:pr-20 lg:pr-8 lg:mt-24 xl:mt-0 z-50 md:z-1"
     >
-      <ModalTriggerFreeDl title="Free sample audio" client:load />
+      <ModalTriggerFreeDl title="Try it for Free" client:load />
     </div>
   </nav>
 </header>

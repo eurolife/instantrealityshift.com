@@ -89,10 +89,10 @@ const eventsCollection = defineCollection({
   }),
 });
 
-const newsCollection = defineCollection({
+const blogCollection = defineCollection({
   loader: glob({
     pattern: '**/*.{md,mdx}',
-    base: 'src/content/news',
+    base: 'src/content/blog',
   }),
   schema: z.object({
     title: z.string(),
@@ -413,7 +413,7 @@ export const collections = {
   customPageCollection,
   pages: pagesCollection,
   events: eventsCollection,
-  news: newsCollection,
+  blog: blogCollection,
   resources: resourcesCollection,
 
   // sections

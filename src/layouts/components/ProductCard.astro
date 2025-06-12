@@ -14,14 +14,16 @@ const { title, description, price, item_number, image } = Astro.props.info;
     <div
       class="hover:text-text/70 transition-colors duration-500 flex flex-col flex-grow"
     >
-      <ImageMod
-        src={`/images/products/${image}.png`}
-        alt={title}
-        width={600}
-        height={600}
-        class="rounded w-full"
-        loading="lazy"
-      />
+      <a href={`https://payhip.com/b/${item_number}`} class="w-full">
+        <ImageMod
+          src={`/images/products/${image}.png`}
+          alt={title}
+          width={600}
+          height={600}
+          class="rounded w-full"
+          loading="lazy"
+        />
+      </a>
       <p class="text-text-light mt-4">{description}</p>
 
       <div class="flex justify-between mt-auto pt-4">
@@ -29,10 +31,10 @@ const { title, description, price, item_number, image } = Astro.props.info;
 
         <a
           href={`https://payhip.com/b/${item_number}`}
-          class="payhip-add-to-cart-button bg-cartbutton hover:bg-cartbuttonx rounded-full py-1 px-3 transition duration-300"
+          class="payhip-add-to-cart-button0 bg-cartbutton hover:bg-cartbuttonx rounded-full py-1 px-3 transition duration-300"
           data-theme="none"
           onclick="gtagSendEvent()"
-          data-product={item_number}>Add to Cart</a
+          data-product={item_number}>I Want This</a
         >
       </div>
     </div>

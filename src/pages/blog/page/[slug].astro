@@ -1,19 +1,19 @@
 ---
-import Pagination from "@/components/Pagination.astro";
-import config from "@/config/config.json";
-import Base from "@/layouts/Base.astro";
-import { getSinglePage } from "@/lib/contentParser.astro";
-import { sortByDate } from "@/lib/utils/sortFunctions";
-import CallToAction from "@/partials/CallToAction.astro";
-import PostsWithPageHeader from "@/partials/PostsWithPageHeader.astro";
-import { getEntry, type CollectionEntry } from "astro:content";
-const COLLECTION_FOLDER = "news";
+import Pagination from '@/components/Pagination.astro';
+import config from '@/config/config.json';
+import Base from '@/layouts/Base.astro';
+import { getSinglePage } from '@/lib/contentParser.astro';
+import { sortByDate } from '@/lib/utils/sortFunctions';
+import CallToAction from '@/partials/CallToAction.astro';
+import PostsWithPageHeader from '@/partials/PostsWithPageHeader.astro';
+import { getEntry, type CollectionEntry } from 'astro:content';
+const COLLECTION_FOLDER = 'blog';
 const { slug } = Astro.params;
 const posts = await getSinglePage(COLLECTION_FOLDER);
 const postIndex = (await getEntry(
   COLLECTION_FOLDER,
-  "-index"
-)) as CollectionEntry<"news">;
+  '-index'
+)) as CollectionEntry<'blog'>;
 const headingContent = postIndex.data.hero;
 const sortedPosts = sortByDate(posts);
 const totalPages = Math.ceil(posts.length / config.settings.pagination);
@@ -23,7 +23,7 @@ const indexOfFirstPost = indexOfLastPost - config.settings.pagination;
 const currentPosts = sortedPosts.slice(indexOfFirstPost, indexOfLastPost);
 
 export async function getStaticPaths() {
-  const COLLECTION_FOLDER = "news";
+  const COLLECTION_FOLDER = 'blog';
   const posts = await getSinglePage(COLLECTION_FOLDER);
   const totalPages = Math.ceil(posts.length / config.settings.pagination);
   const paths = [];

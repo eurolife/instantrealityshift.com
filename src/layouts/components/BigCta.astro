@@ -1,14 +1,9 @@
 ---
-const { title, desc, logo, aosDelay } = Astro.props;
-import { Icon } from 'astro-icon/components';
+const { title, desc, logo } = Astro.props;
 import PlaySample from './PlaySample.astro';
 ---
 
-<div
-  class="rotating-border group inline-block rounded-full"
-  data-aos="fade-up-sm"
-  data-aos-delay={aosDelay}
->
+<div class="rotating-border group inline-block rounded-full">
   <div
     class="h-full py-3 pl-3 pr-5 rounded-full border border-border bg-black relative overflow-hidden isolate"
   >

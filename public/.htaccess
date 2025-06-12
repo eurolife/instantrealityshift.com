@@ -86,3 +86,7 @@
     Header append Vary: Accept-Encoding
   </FilesMatch>
 </IfModule>
+
+<IfModule mod_mime.c>
+  AddType video/mp4 .mp4
+</IfModule>
