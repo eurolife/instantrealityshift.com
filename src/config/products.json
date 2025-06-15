@@ -5,136 +5,170 @@
       "title": "Wealth and Success",
       "item_number": "xtErD",
       "description": "Rewire your mind for abundance with this powerful audio track combining wealth-focused afformations and binaural beats designed to align your brain with prosperity. Listen daily to activate confidence, open your energetic flow, and attract success with ease.",
+      "shortDescription": "Unlock your full potential with this powerful audio of wealth-focused afformations and binaural beats designed to attract success and financial abundance.",
       "price": "12.95",
-      "image": "wealth-success"
+      "image": "wealth-success",
+      "popular": true
     },
     {
       "category": 1,
       "title": "Unexpected Money",
       "item_number": "VcvjO",
       "description": "Attract surprise income with this powerful audio track. Binaural beats, meditative music, and afformations work together to align your energy with receiving unexpected money—effortlessly.",
+      "shortDescription": "",
       "price": "12.95",
-      "image": "unexpected-money"
+      "image": "unexpected-money",
+      "popular": false
     },
     {
       "category": 1,
       "title": "Manifest Passive Income",
       "item_number": "MZpLa",
       "description": "Unlock the flow of effortless wealth with this powerful audio featuring afformations designed to attract abundant passive income. Set to calming binaural meditation music, this track helps rewire your mindset and align you with new income streams that come easily, naturally, and consistently—even while you sleep. Perfect for daily listening to shift into a state of financial freedom and flow.",
+      "shortDescription": "",
       "price": "12.95",
-      "image": "passive-income"
+      "image": "passive-income",
+      "popular": false
     },
     {
       "category": 2,
       "title": "Your Ideal Relationship",
       "item_number": "6BgeW",
       "description": "Open your heart to aligned love with this soothing audio track featuring love-based afformations and gentle binaural beats. Designed to shift your energy, release resistance, and attract deep, meaningful connection.",
+      "shortDescription": "",
       "price": "12.95",
-      "image": "relationship"
+      "image": "relationship",
+      "popular": false
     },
     {
       "category": 2,
       "title": "Attract Your Soulmate",
       "item_number": "a4UsQ",
       "description": "Call in your soulmate with this heart-opening audio featuring soul-deep afformations and calming binaural beats. Crafted to align your energy with unconditional love, divine timing, and the relationship meant for you.",
+      "shortDescription": "Reconnect with love and call in your perfect match with this soulmate attraction audio, combining heartfelt afformations and soothing binaural frequencies.",
       "price": "12.95",
-      "image": "soulmate"
+      "image": "soulmate",
+      "popular": true
     },
     {
       "category": 2,
       "title": "Attract Love and Romance",
       "item_number": "nWrsd",
       "description": "Attract love and romance effortlessly with this magnetic audio track combining heart-centered afformations and gentle binaural beats. Tune in to shift your vibration, awaken self-worth, and draw in the romantic connection you desire.",
+      "shortDescription": "",
       "price": "12.95",
-      "image": "romance"
+      "image": "romance",
+      "popular": false
     },
     {
       "category": 3,
       "title": "Weight Loss",
       "item_number": "vITPx",
       "description": "Rewire your mind for a healthier, lighter you. This audio combines soothing binaural beats with empowering afformations to help you naturally choose nourishing foods, stay motivated, and release excess weight with ease.",
+      "shortDescription": "Empower your body and mind to release excess weight naturally with positive afformations and calming binaural beats.",
       "price": "12.95",
-      "image": "weight-loss"
+      "image": "weight-loss",
+      "popular": true
     },
     {
       "category": 3,
       "title": "Release Anxiety",
       "item_number": "0bq7V",
       "description": "This soothing audio combines calming binaural beats with gentle afformations to help ease anxiety and restore inner peace. Designed to quiet the mind and calm the nervous system, it guides you back to a place of safety, stillness, and emotional balance. Let the questions lead you into a more grounded and peaceful state—naturally and effortlessly.",
+      "shortDescription": "",
       "price": "12.95",
-      "image": "anxiety"
+      "image": "anxiety",
+      "popular": false
     },
     {
       "category": 3,
       "title": "Improve Sleep",
       "item_number": "Z3tlB",
       "description": "Drift into restful sleep with this calming audio that blends soothing binaural music and gentle afformations. These empowering questions help quiet the mind, relax the body, and guide you naturally into deep, restorative rest—so you wake feeling refreshed, balanced, and at peace.",
+      "shortDescription": "",
       "price": "12.95",
-      "image": "sleep"
+      "image": "sleep",
+      "popular": false
     },
     {
       "category": 3,
       "title": "Pain Relief",
       "item_number": "xlAS8",
       "description": "This calming audio blends powerful afformations (healing questions) with soothing, meditative music to support your body's natural ability to relax, realign, and release tension. Ideal for moments of discomfort, this track is designed to help you feel more ease, softness, and relief—physically, emotionally, and energetically.",
+      "shortDescription": "",
       "price": "12.95",
-      "image": "pain-relief"
+      "image": "pain-relief",
+      "popular": false
     },
     {
       "category": 3,
       "title": "Improve Gut Health & Digestion",
       "item_number": "r4c5d",
       "description": "Support Your Gut, Transform Your Wellbeing. This calming 30-minute audio combines powerful afformations—positive, healing questions that align your subconscious—with gentle binaural beats meditation music designed to support gut health and ease digestion. Let each question guide your body toward balance, calm, and natural healing. Perfect for daily listening, this audio gently helps rewire your internal beliefs and supports your digestive system from the inside out.",
+      "shortDescription": "",
       "price": "12.95",
-      "image": "digestion"
+      "image": "digestion",
+      "popular": false
     },
     {
       "category": 4,
       "title": "Release Imposter Syndrome",
       "item_number": "CzeLR",
       "description": "This empowering audio is designed to gently dissolve imposter syndrome and awaken your inner confidence. With calming binaural beats and transformational afformations, it helps rewire limiting beliefs and align you with your true worth—so you can feel secure, capable, and ready to step fully into your purpose.",
+      "shortDescription": "Break free from self-doubt and embrace your true abilities with confidence-boosting afformations and soothing, supportive audio guidance.",
       "price": "12.95",
-      "image": "imposter-syndrome"
+      "image": "imposter-syndrome",
+      "popular": true
     },
     {
       "category": 4,
       "title": "Get Your Dream Job",
       "item_number": "piUOr",
       "description": "Unlock the career you've been waiting for with this powerful audio of transformational afformations. Designed to shift your mindset and energy, this track helps you align with confidence, worthiness, and the perfect job opportunity. With calming binaural beats and meditative music, it prepares you to walk into any interview with clarity, calm, and presence—so you can smash that job interview and step into the role that’s meant for you.",
+      "shortDescription": "",
       "price": "12.95",
-      "image": "dream-job"
+      "image": "dream-job",
+      "popular": false
     },
     {
       "category": 4,
       "title": "Overcome Procrastination",
       "item_number": "oWnlM",
       "description": "Break Free from Procrastination. Struggling to get started or stay focused? This powerful 30-minute audio helps rewire your subconscious with empowering questions that spark motivation and action. Backed by calming binaural beats, it's designed to help you shift from stuck to unstoppable—naturally and effortlessly.",
+      "shortDescription": "",
       "price": "12.95",
-      "image": "procrastination"
+      "image": "procrastination",
+      "popular": false
     },
     {
       "category": 5,
       "title": "Quit Smoking",
       "item_number": "vGP0V",
       "description": "This calming audio blends powerful afformations with soothing binaural meditation music to support your journey to a smoke-free life. These transformational questions help reprogram your subconscious, making it easier to release old habits and embrace vibrant health and self-empowerment—naturally and effortlessly.",
+      "shortDescription": "",
       "price": "12.95",
-      "image": "quit-smoking"
+      "image": "quit-smoking",
+      "popular": false
     },
     {
       "category": 5,
       "title": "Stop Gambling",
       "item_number": "lE1f0",
       "description": "Break Free from Gambling Addiction: Empower your mind with transformational questions designed to dissolve the urges, fears, and emotional patterns behind gambling addiction. This guided audio combines afformations with soothing binaural beats to support lasting freedom, self-control, and inner peace—one powerful listen at a time.",
+      "shortDescription": "",
       "price": "12.95",
-      "image": "stop-gambling"
+      "image": "stop-gambling",
+      "popular": false
     },
     {
       "category": 5,
       "title": "Overcome Sex Addiction",
       "item_number": "uyaYq",
       "description": "This 30-minute audio combines powerful afformations with soothing binaural beats meditation music to help rewire your mind and shift your habits at the root. Instead of forcing change through willpower alone, you'll be gently guided by transformative questions that speak to your deeper truth—restoring self-worth, emotional balance, and freedom. Listen daily to begin releasing guilt, cravings, and compulsive patterns, and open the door to healthy, fulfilling relationships—with yourself and others.",
+      "shortDescription": "",
       "price": "12.95",
-      "image": "sex-addiction"
+      "image": "sex-addiction",
+      "popular": false
     }
   ]
 }

@@ -6,10 +6,10 @@ description: 'These aren’t just audio tracks — they’re energetic catalysts
 
 # Testimonials
 testimonials:
-  - name: 'Jenna M.'
+  - name: 'Jodie T.'
     designation: ''
     avatar: '/images/profiles/profile_1.png'
-    content: "I started listening to the 'Attract Love' track every night before bed, and within a week I noticed a shift in how people were showing up in my life — including someone who now feels like a soulmate connection. It felt like the audio opened my heart in a way I didn’t realise was closed."
+    content: 'Just listened to the audio on imposter syndrome and I found myself in my office happily creating new content before the 30 min recording had finished playing. I have been unable to post anything for weeks…I have been paralyzed by imposter syndrome and Paula’s recording popped me right out of my funk.'
 
   - name: 'Luis A.'
     designation: ''

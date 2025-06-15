@@ -1,0 +1,32 @@
+---
+import { filterPopularProducts } from '@/helpers/FilterProducts';
+import ProductCard from '@/components/ProductCard.astro';
+---
+
+<section class="section pb-8">
+  <div class="container">
+    <div class="">
+      <div>
+        <h2 class="mb-4" data-aos="fade-up-sm" data-aos-delay="100">
+          Popular Audios
+        </h2>
+        <p class="mb-8">30-minute audios that will change your life.</p>
+      </div>
+
+      <div
+        class="grid md:grid-cols-2 xl:grid-cols-4 gap-10 md:gap-4"
+        data-aos="zoom-out-sm"
+        data-aos-delay="100"
+      >
+        {
+          filterPopularProducts().map((item) => (
+            <ProductCard info={item} short={true} />
+          ))
+        }
+      </div>
+      <div class="my-4 flex justify-end">
+        <a href="products" class="underline">See all audios &raquo;</a>
+      </div>
+    </div>
+  </div>
+</section>

@@ -5,6 +5,16 @@ import { getSinglePage } from '@/lib/contentParser.astro';
 import dateFormat from '@/lib/utils/dateFormat';
 import CallToAction from '@/partials/CallToAction.astro';
 import { render } from 'astro:content';
+import {
+  FacebookShareButton,
+  LinkedInShareButton,
+  MediumShareButton,
+  RedditShareButton,
+  ThreadsShareButton,
+  TwitterShareButton,
+  BlueskyShareButton,
+  SocialShare,
+} from 'astro-social-share';
 
 export async function getStaticPaths() {
   const COLLECTION_FOLDER = 'blog';
@@ -21,6 +31,14 @@ export async function getStaticPaths() {
 const { news } = Astro.props;
 const { Content } = await render(news);
 const { date, description, image, meta_title, title } = news.data;
+const BUTTONS = [
+  TwitterShareButton,
+  FacebookShareButton,
+  BlueskyShareButton,
+  LinkedInShareButton,
+  RedditShareButton,
+  ThreadsShareButton,
+];
 ---
 
 <Base title={title} meta_title={meta_title} description={description}>
@@ -59,6 +77,36 @@ const { date, description, image, meta_title, title } = news.data;
 
           <div class="content">
             <Content />
+          </div>
+          <div class="text-white flex items-center mt-4">
+            <strong class="mr-4">Share this article: </strong>
+            <SocialShare
+              buttons={BUTTONS}
+              description={description}
+              title={title}
+            >
+              <slot name="astro-social-share-css">
+                <style is:global>
+                  .astro-social-share {
+                    margin: 20px 0px;
+                    height: 24px;
+                    color: white;
+                  }
+                  .astro-social-share a {
+                    text-decoration: none;
+                    margin-right: 10px;
+                  }
+                  .astro-social-share svg {
+                    height: 24px;
+                    fill: white;
+                  }
+                  .astro-social-share svg[data-astro-cid-a232q27d]:hover,
+                  .astro-social-share svg[data-astro-cid-u23ti2to]:hover {
+                    fill: gray;
+                  }
+                </style>
+              </slot>
+            </SocialShare>
           </div>
         </div>
       </div>

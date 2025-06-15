@@ -1,7 +1,9 @@
 ---
 import ImageMod from './ImageMod.astro';
 
-const { title, description, price, item_number, image } = Astro.props.info;
+const { title, description, price, item_number, image, shortDescription } =
+  Astro.props.info;
+const short = Astro.props.short;
 ---
 
 <article class="rotating-border">
@@ -24,7 +26,13 @@ const { title, description, price, item_number, image } = Astro.props.info;
           loading="lazy"
         />
       </a>
-      <p class="text-text-light mt-4">{description}</p>
+      {
+        short ? (
+          <p class="text-text-light text-sm mt-4">{shortDescription}</p>
+        ) : (
+          <p class="text-text-light mt-4">{description}</p>
+        )
+      }
 
       <div class="flex justify-between mt-auto pt-4">
         <span class="font-bold text-lg">£{price}</span>
@@ -34,7 +42,7 @@ const { title, description, price, item_number, image } = Astro.props.info;
           class="payhip-add-to-cart-button0 bg-cartbutton hover:bg-cartbuttonx rounded-full py-1 px-3 transition duration-300"
           data-theme="none"
           onclick="gtagSendEvent()"
-          data-product={item_number}>I Want This</a
+          data-product={item_number}>Start now</a
         >
       </div>
     </div>
