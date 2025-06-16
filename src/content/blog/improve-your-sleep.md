@@ -40,14 +40,14 @@ When paired with **binaural frequency meditation music**, the impact is multipli
 
 We’ve created a FREE sample version of our Better Sleep Afformation Audio so you can try it yourself. Download it, press play at bedtime, and feel your thoughts settle into serenity.
 
-👉 **[Download the Free Sleep Sample](https://payhip.com/b/bFBRl)**
+👉 **[Download the Free Sleep Sample](https://shop.instantrealityshift.com/b/bFBRl)**
 
-For those ready for a deeper transformation, the **[full 30-minute version](https://payhip.com/b/Z3tlB)** is available for purchase. With more afformations, extended music, and a more immersive experience, it’s designed to help you rewire your sleep patterns for lasting change.
+For those ready for a deeper transformation, the **[full 30-minute version](https://shop.instantrealityshift.com/b/Z3tlB)** is available for purchase. With more afformations, extended music, and a more immersive experience, it’s designed to help you rewire your sleep patterns for lasting change.
 
 ### Wake Up Refreshed, Night After Night
 
 You don’t have to suffer through restless nights. The path to better sleep might just begin with a question—and the right frequency to carry it into your soul.
 
-🛒 **[Explore the Full Sleep Audio Now](https://payhip.com/b/Z3tlB)**
+🛒 **[Explore the Full Sleep Audio Now](https://shop.instantrealityshift.com/b/Z3tlB)**
 
 🌙 Because you deserve deep, effortless rest.
