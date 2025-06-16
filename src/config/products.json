@@ -118,7 +118,7 @@
       "shortDescription": "Break free from self-doubt and embrace your true abilities with confidence-boosting afformations and soothing, supportive audio guidance.",
       "price": "12.95",
       "image": "imposter-syndrome",
-      "popular": true
+      "popular": false
     },
     {
       "category": 4,
@@ -158,7 +158,7 @@
       "shortDescription": "",
       "price": "12.95",
       "image": "alcohol",
-      "popular": false
+      "popular": true
     },
     {
       "category": 5,
