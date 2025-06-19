@@ -129,16 +129,16 @@ const resourcesCollection = defineCollection({
 });
 
 // Regular Pages collection schema
-const pagesCollection = defineCollection({
-  loader: glob({ pattern: '**/*.{md,mdx}', base: 'src/content/pages' }),
-  schema: z.object({
-    title: z.string(),
-    meta_title: z.string().optional(),
-    description: z.string().optional(),
-    image: z.string().optional(),
-    draft: z.boolean().optional(),
-  }),
-});
+// const pagesCollection = defineCollection({
+//   loader: glob({ pattern: '**/*.{md,mdx}', base: 'src/content/pages' }),
+//   schema: z.object({
+//     title: z.string(),
+//     meta_title: z.string().optional(),
+//     description: z.string().optional(),
+//     image: z.string().optional(),
+//     draft: z.boolean().optional(),
+//   }),
+// });
 
 // sections collection
 const homeBanner = defineCollection({
@@ -411,7 +411,7 @@ export const collections = {
   whyPageCollection,
   contactPageCollection,
   customPageCollection,
-  pages: pagesCollection,
+  // pages: pagesCollection,
   events: eventsCollection,
   blog: blogCollection,
   resources: resourcesCollection,
