@@ -8,5 +8,5 @@ button:
   enable: true
   label: 'Explore Audios'
   link: '/products'
-quote: 'We help you shift your reality effortlessly by guiding you to the exact questions your soul is craving.'
+quote: 'Discover the secret that’s helping thousands shift their reality—see how we do it and experience the transformation for yourself.'
 ---
