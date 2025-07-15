@@ -112,6 +112,16 @@
     },
     {
       "category": 4,
+      "title": "Master Self-love",
+      "item_number": "self-love",
+      "description": "Nourish the Relationship You Have with Yourself. This calming audio is designed to gently build self-worth, confidence, and inner peace. With soothing binaural beats and powerful self-love prompts, it helps you reconnect with who you truly are—without pressure or force. Perfect for moments when you need a reminder that you are already enough.",
+      "shortDescription": "A soothing audio designed to gently deepen your self-love, boost your confidence, and remind you that you are already enough.",
+      "price": "12.95",
+      "image": "self-love",
+      "popular": true
+    },
+    {
+      "category": 4,
       "title": "Release Imposter Syndrome",
       "item_number": "CzeLR",
       "description": "This empowering audio is designed to gently dissolve imposter syndrome and awaken your inner confidence. With calming binaural beats and transformational afformations, it helps rewire limiting beliefs and align you with your true worth—so you can feel secure, capable, and ready to step fully into your purpose.",
@@ -158,7 +168,7 @@
       "shortDescription": "Break free from alcohol cravings with this powerful audio designed to rewire your mindset and support lasting change.",
       "price": "12.95",
       "image": "alcohol",
-      "popular": true
+      "popular": false
     },
     {
       "category": 5,
