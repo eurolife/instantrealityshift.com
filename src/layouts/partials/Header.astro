@@ -29,7 +29,7 @@ export interface NavigationLink {
         class="navbar-nav shadow-inset shadow-shadow/30 lg:shadow-none order-3 hidden lg:order-1 lg:flex items-center lg:w-auto lg:space-x-2 lg:pb-0"
       >
         {
-          menu.main.map((item) => (
+          menu.main.map((item, index) => (
             <li
               class={`nav-item  ${item.hasChildren ? ' group relative' : ''}`}
             >
@@ -48,7 +48,7 @@ export interface NavigationLink {
                   href={item.url}
                   aria-label={item.name}
                   data-astro-reload
-                  class="nav-link inline-flex items-center cursor-pointer"
+                  class={`nav-link inline-flex items-center cursor-pointer ${index === 5 && 'font-bold text-cyan-300'}`}
                 >
                   {item.name}
                 </a>

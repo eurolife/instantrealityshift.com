@@ -1,0 +1,250 @@
+---
+import Base from '@/layouts/Base.astro';
+import PageHeader from '@/partials/PageHeader.astro';
+import ImageMod from '@/components/ImageMod.astro';
+import RightArrowBtn from '@/components/RightArrowBtn.astro';
+import TestimonialCard from '@/components/TestimonialCard.astro';
+import type { CollectionEntry } from 'astro:content';
+import { getEntry } from 'astro:content';
+
+const { enable, description, head, testimonials, title } = (
+  (await getEntry(
+    'testimonial',
+    'testimonial'
+  )) as CollectionEntry<'testimonial'>
+).data;
+
+const aosDelay = Astro.props.aosDelay as number;
+---
+
+<Base
+  title="Get the Free Guide to Manifest Faster and Easier | Instant Reality Shift"
+  meta_title="Get the Free Guide to Manifest Faster and Easier | Instant Reality Shift"
+  description="The description"
+>
+  <PageHeader
+    title="Get the Free Guide to Manifest Faster and Easier"
+    description="Learn how to easily manifest the life you want with this Free eBook 'How Can I Finally Manifest the Life I Deserve?'"
+  />
+  <!-- Hero Section -->
+  <div class="container">
+    <div class="content">
+      <section class="lg:flex">
+        <div class="lg:w-[60%] text-center">
+          <ImageMod
+            src="/images/ebook.png"
+            alt="Book cover"
+            width={320}
+            height={400}
+            class="w-[320px] lg:w-[400px] mx-auto"
+          />
+        </div>
+
+        <div class="lg:w-[40%]">
+          <h2 class="text-4xl font-bold mb-4">
+            Ready to Shift Into the Life You Deserve?
+          </h2>
+          <p class="text-xl mb-6 text-white">
+            Tired of repeating affirmations that never seem to stick? This free
+            guide reveals a gentle, powerful alternative: discover how asking
+            the right questions—combined with brain-tuning frequencies—can
+            rewire your mindset, dissolve resistance, and align you with the
+            life you truly deserve. Whether you're calling in more confidence,
+            clarity, love, or abundance, this method helps you shift from effort
+            to flow, from hoping to receiving.
+          </p>
+
+          <RightArrowBtn
+            link="https://shop.instantrealityshift.com/b/manifestmylife"
+            label="Get Your Free Copy"
+            className="flex btn btn-primary mt-4 no-underline mx-auto hover:text-black"
+          />
+        </div>
+      </section>
+
+      <!-- What You'll Learn Section -->
+      <section
+        class="py-12 px-6 bg-pinky rounded-lg bg-[url('images/whatsinside.jpg')] bg-cover bg-center"
+        data-aos="fade-up-sm"
+        data-aos-delay={aosDelay}
+      >
+        <div class="max-w-3xl mx-auto text-center">
+          <h2 class="text-4xl font-semibold mb-6">
+            What You'll Discover Inside
+          </h2>
+          <ul class="text-left text-lg md:text-xl space-y-4">
+            <li>
+              Why traditional affirmations often don’t work — and what to do
+              instead
+            </li>
+            <li>How to ask empowering questions that rewire your brain</li>
+            <li>
+              The science behind brainwave frequencies and how they enhance
+              manifestation
+            </li>
+            <li>
+              Real success stories from people who’ve shifted their reality
+              using this exact method
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="my-12">
+        <RightArrowBtn
+          link="https://shop.instantrealityshift.com/b/manifestmylife"
+          label="Get Your Free Copy"
+          className="flex btn btn-primary mt-4 no-underline mx-auto hover:text-black"
+        />
+      </div>
+
+      <section
+        class="py-12 px-6 flex"
+        data-aos="fade-up-sm"
+        data-aos-delay={aosDelay}
+      >
+        <div class="w-1/3">
+          <h2 class="text-4xl font-semibold mb-6">
+            Why This Works (When Affirmations Don't)
+          </h2>
+          <p class="text-lg text-white">
+            Affirmations can feel forced when your subconscious doesn't believe
+            them. That's why this method works differently — by using empowering
+            questions instead of statements. These questions gently bypass
+            resistance and open your mind to new beliefs. When paired with the
+            right brainwave frequencies, this process becomes a natural,
+            powerful shift from within.
+          </p>
+        </div>
+
+        <ImageMod
+          src="/images/mindquestions.png"
+          alt="Book cover"
+          width={400}
+          height={400}
+          class="w-[320px] lg:w-[500px] mx-auto"
+        />
+      </section>
+      <div class="mb-12">
+        <RightArrowBtn
+          link="https://shop.instantrealityshift.com/b/manifestmylife"
+          label="Start now for FREE"
+          className="flex btn btn-primary mt-4 no-underline mx-auto hover:text-black"
+        />
+      </div>
+
+      <!-- What Makes this Guide Different -->
+      <section
+        class="my-16 py-12 px-6 bg-pinky rounded-lg bg-[url('images/different.jpg')] bg-cover bg-center"
+        data-aos="fade-up-sm"
+        data-aos-delay={aosDelay}
+      >
+        <div class="max-w-3xl mx-auto text-center">
+          <h2 class="text-4xl font-semibold mb-6">
+            What Makes This Guide Different
+          </h2>
+          <p class="text-xl font-bold text-white uppercase my-8">
+            What you won't find in this guide:
+          </p>
+          <ul class="text-left text-lg md:text-xl space-y-4">
+            <li>Generic affirmations that don't resonate</li>
+            <li>Overhyped quick-fix promises</li>
+            <li>Complicated spiritual jargon</li>
+          </ul>
+          <hr class="border-gray-500" />
+          <p class="text-xl font-bold text-white uppercase my-8">
+            What you will discover:
+          </p>
+          <ul class="text-left text-lg md:text-xl space-y-4">
+            <li>How to work with your subconscious, not against it</li>
+            <li>A simple daily practice using sound and curiosity</li>
+            <li>
+              A way to feel aligned, not overwhelmed, on your manifestation
+              journey
+            </li>
+          </ul>
+        </div>
+        <div class="mt-16">
+          <RightArrowBtn
+            link="https://shop.instantrealityshift.com/b/manifestmylife"
+            label="Discover Now"
+            className="flex btn btn-primary mt-4 no-underline mx-auto hover:text-black"
+          />
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section
+        class="section-content"
+        data-aos="fade-up-sm"
+        data-aos-delay={aosDelay}
+      >
+        <h2 class="text-4xl font-semibold mb-6 text-center mb-12">
+          Real Shifts. Real People.
+        </h2>
+        <div class="grid grid-container--fit gap-5">
+          {
+            testimonials &&
+              testimonials.length &&
+              testimonials.map((testimonial, index) => {
+                const aosDelay = 100 * (index % 3);
+                return (
+                  index < 3 && (
+                    <TestimonialCard
+                      aosDelay={aosDelay}
+                      testimonial={testimonial}
+                    />
+                  )
+                );
+              })
+          }
+        </div>
+        <div class="mt-16">
+          <RightArrowBtn
+            link="https://shop.instantrealityshift.com/b/manifestmylife"
+            label="Start Your Shift Today"
+            className="flex btn btn-primary mt-4 no-underline mx-auto hover:text-black"
+          />
+        </div>
+      </section>
+
+      <!-- This is for you -->
+      <section
+        class="my-16 py-12 px-6 bg-pinky rounded-lg bg-[url('images/foryou.jpg')] bg-cover bg-center"
+        data-aos="fade-up-sm"
+        data-aos-delay={aosDelay}
+      >
+        <div class="max-w-3xl mx-auto text-center">
+          <h2 class="text-4xl font-semibold mb-6 text-white">
+            This Is For You If…
+          </h2>
+
+          <ul class="text-left text-lg md:text-xl space-y-4 text-white">
+            <li class="text-white">
+              You're tired of repeating affirmations that don't feel true
+            </li>
+            <li class="text-white">
+              You've done the inner work, but something still feels stuck
+            </li>
+            <li class="text-white">
+              You want a manifestation method that actually fits your energy
+            </li>
+            <li class="text-white">
+              You're open to blending mindset and frequency work
+            </li>
+            <li class="text-white">
+              You're ready for a shift that feels aligned, not forced
+            </li>
+          </ul>
+        </div>
+      </section>
+      <div class="my-16">
+        <RightArrowBtn
+          link="https://shop.instantrealityshift.com/b/manifestmylife"
+          label="Get the Free Guide"
+          className="flex btn btn-primary mt-4 no-underline mx-auto hover:text-black"
+        />
+      </div>
+    </div>
+  </div>
+</Base>
