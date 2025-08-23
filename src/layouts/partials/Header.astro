@@ -16,6 +16,7 @@ export interface NavigationLink {
   hasChildren?: boolean;
   children?: ChildNavigationLink[];
 }
+const currentPath = Astro.url.pathname;
 ---
 
 <header class="header z-30">
@@ -48,7 +49,7 @@ export interface NavigationLink {
                   href={item.url}
                   aria-label={item.name}
                   data-astro-reload
-                  class={`nav-link inline-flex items-center cursor-pointer ${index === 5 && 'font-bold text-cyan-300'}`}
+                  class={`nav-link inline-flex items-center cursor-pointer ${item.url === currentPath && 'font-bold text-white'} ${index === 5 && 'font-bold text-cyan-300'}`}
                 >
                   {item.name}
                 </a>
@@ -59,7 +60,7 @@ export interface NavigationLink {
                     <li class="nav-dropdown-item">
                       <a
                         href={child.url}
-                        class="nav-dropdown-link"
+                        class={`nav-dropdown-link ${child.url === currentPath && 'font-bold text-white'}`}
                         data-astro-reload
                       >
                         {child.name}
@@ -176,11 +177,13 @@ export interface NavigationLink {
         </div>
       )
     }
-    <div
-      class="absolute left-0 right-0 mt-44 md:mt-0 flex justify-center w-full md:justify-end md:pr-20 lg:pr-8 lg:mt-24 xl:mt-0 z-50 md:z-1"
-    >
-      <ModalTriggerFreeDl title="Free Sample Audio" client:load />
-    </div>
+    {
+      currentPath !== '/how-to-manifest-the-life-i-deserve' && (
+        <div class="absolute left-0 right-0 mt-44 md:mt-0 flex justify-center w-full md:justify-end md:pr-20 lg:pr-8 lg:mt-24 xl:mt-0 z-50 md:z-1">
+          <ModalTriggerFreeDl title="Free Sample Audio" client:load />
+        </div>
+      )
+    }
   </nav>
 </header>
 <script>
