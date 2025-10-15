@@ -1,0 +1,184 @@
+---
+import GradientTitle from '@/components/GradientTitle.astro';
+import ImageMod from '@/components/ImageMod.astro';
+import RightArrowBtn from '@/components/RightArrowBtn.astro';
+import Video from '@/shortcodes/Video';
+import TestimonialVideo from './TestimonialVideo.astro';
+---
+
+<section id="rebrand" class="section xl:pb-20 overflow-hidden">
+  <div class="container">
+    <div class="mx-auto text-center mb-8 lg:mb-16">
+      <h2 class="text-pinky">
+        <strong>Instant Reality Shift is becoming 'Your Preferred Life'</strong>
+      </h2>
+      <p
+        class="text-2xl italic mt-8 xl:text-3xl"
+        data-aos="fade-up-sm"
+        data-aos-delay="200"
+      >
+        “The only way to make sense out of change is to plunge into it,<br
+        />move with it, and join the dance.”
+      </p>
+      <p
+        data-aos="fade-up-sm"
+        data-aos-delay="200"
+        class="mt-4 text-lg text-center"
+      >
+        - Alan Watts
+      </p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="mb-10 last:mb-0">
+      <!-- <div class="flex justify-center mb-8">
+        <GradientTitle
+          title="What are Instant Reality Shift audios?"
+          data-aos="fade-up-sm"
+          data-aos-delay="100"
+        />
+      </div> -->
+
+      <div
+        class="flex flex-col-reverse lg:flex-row lg:items-center gap-10 w-full"
+      >
+        {/* LEFT */}
+        <div class="lg:w-[52%] overflow-hidden">
+          <div class="grid place-items-center relative isolate lg:py-32">
+            <div class="absolute inset-0 grid place-items-center">
+              <canvas
+                class="absolute inset-0 w-full h-full overflow-hidden -z-10 serviceSporeCanvas"
+              ></canvas>
+              <div
+                class="flex items-center justify-center rotate-[55deg] w-full h-full -z-20 bg-gradient-image"
+              >
+                <div
+                  class="w-1/3 aspect-square bg-secondary blur-[90px] rounded-full translate-x-10"
+                >
+                </div>
+                <div
+                  class="w-1/3 aspect-square bg-tertiary blur-[90px] rounded-full -translate-x-10"
+                >
+                </div>
+              </div>
+            </div>
+            <ImageMod
+              src="/images/transform.png"
+              alt="s"
+              width={600}
+              height={600}
+              class="w-[220px] md:w-auto"
+            />
+          </div>
+        </div>
+        {/* RIGHT */}
+        <div class="lg:w-[48%]">
+          <div class="space-t-20">
+            <div class="space-y-6">
+              <!-- <GradientTitle
+                title="What are Instant Reality Shift audios?"
+                data-aos="fade-up-sm"
+                data-aos-delay="100"
+              /> -->
+
+              <h2 data-aos="fade-up-sm" data-aos-delay="150">
+                <!-- Experience the Shift That Affirmations Alone Can't Give You -->
+                Why the change?
+              </h2>
+              <p
+                class="text-2xl italic text-text/80"
+                data-aos="fade-up-sm"
+                data-aos-delay="200"
+              >
+                A clearer message, a more personalised, fulfilling experience
+                and more ways to help you transform your life...
+              </p>
+
+              <p
+                class="text-lg md:text-xl text-text/80"
+                data-aos="fade-up-sm"
+                data-aos-delay="200"
+              >
+                After a lot of thought and brainstorming ideas around, I've
+                decided that you should have a more personalised experience
+                while getting more support and more benefits from what is
+                offered.
+              </p>
+              <p
+                class="text-lg md:text-xl text-text/80"
+                data-aos="fade-up-sm"
+                data-aos-delay="200"
+              >
+                The new name sends a clearer message as to how I want to help
+                you: to help you move into <span class="text-white font-bold"
+                  >your preferred life</span
+                >. The new website <a
+                  class="underline"
+                  href="https://www.yourpreferredlife.com"
+                  >www.yourpreferredlife.com</a
+                > offers access to ALL audios in any focus area, such as <a
+                  href="https://www.yourpreferredlife.com/abundance-and-prosperity"
+                  class="text-white font-bold hover:text-pinky"
+                  >Abundance & Prosperity</a
+                >, <a
+                  href="https://www.yourpreferredlife.com/health-and-well-being"
+                  class="text-white font-bold">Health and Well-being</a
+                >, <a
+                  href="https://www.yourpreferredlife.com/self-worth-and-confidence"
+                  class="text-white font-bold">Self Worth & Confidence</a
+                >, <a
+                  href="https://www.yourpreferredlife.com/relationships"
+                  class="text-white font-bold">Relationships</a
+                >, <a
+                  href="https://www.yourpreferredlife.com/overcoming-addictions"
+                  class="text-white font-bold">Overcoming Addictions</a
+                >, or <a
+                  href="https://www.yourpreferredlife.com/the-ultimate-audio-library"
+                  class="text-white font-bold">The ENTIRE Library of audios</a
+                > for a nominal monthly fee. I'll be adding new audios every month
+                and with your monthly subscription, you'll have instant access to
+                them as soon as they are added. You'll also have access to other
+                exclusive content, guided videos and much more.
+              </p>
+            </div>
+            <div class="" data-aos="fade-up-sm" data-aos-delay="250">
+              <div
+                class="flex flex-col mt-8 justify-center items-center text-pinky"
+              >
+                <div class="mt-2">
+                  <RightArrowBtn
+                    link="https://www.yourpreferredlife.com"
+                    label="Learn More"
+                    className="btn btn-primary py-3"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    import { sporeCanvas } from '@/lib/utils/particleCanvas';
+
+    document.addEventListener('astro:page-load', () => {
+      const targetElementClassName = '.serviceSporeCanvas';
+      const particleCount = 100;
+      const particleMinSize = 2;
+      const particleMaxSize = 6;
+      const particleMinSpeed = 0.1;
+      const particleMaxSpeed = 1;
+      sporeCanvas(
+        targetElementClassName,
+        particleCount,
+        particleMinSize,
+        particleMaxSize,
+        particleMinSpeed,
+        particleMaxSpeed
+      );
+    });
+  </script>
+</section>

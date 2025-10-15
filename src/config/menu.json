@@ -28,17 +28,10 @@
         {
           "name": "Break Addictions",
           "url": "/addiction"
-        },
-        {
-          "name": "Custom Audio For YOU",
-          "url": "/custom-audio"
         }
       ]
     },
-    {
-      "name": "Custom Audio",
-      "url": "/custom-audio"
-    },
+
     {
       "name": "Our Secret",
       "url": "/why"
@@ -50,14 +43,14 @@
     {
       "name": "Blog",
       "url": "/blog"
-    },
-    {
-      "name": "FREE eBook",
-      "url": "/how-to-manifest-the-life-i-deserve"
     }
   ],
   "footer": {
     "company": [
+      {
+        "name": "Your Preferred Life",
+        "url": "https://www.yourpreferredlife.com"
+      },
       {
         "name": "About",
         "url": "/about"
@@ -65,10 +58,6 @@
       {
         "name": "Our Secret",
         "url": "/why"
-      },
-      {
-        "name": "FREE eBook",
-        "url": "/how-to-manifest-the-life-i-deserve"
       },
       {
         "name": "Blog",
@@ -111,10 +100,6 @@
       {
         "name": "Break Addictions",
         "url": "/addiction"
-      },
-      {
-        "name": "Custom Audio For YOU",
-        "url": "/custom-audio"
       }
     ]
   }

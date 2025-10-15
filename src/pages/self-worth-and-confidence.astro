@@ -1,8 +1,8 @@
 ---
 import Base from '@/layouts/Base.astro';
-import ProductCard from '@/components/ProductCard.astro';
 import PageHeader from '@/partials/PageHeader.astro';
-import { filterProducts } from '@/helpers/FilterProducts';
+import Rebrand from '@/partials/Rebrand.astro';
+import CallToAction from '@/partials/CallToAction.astro';
 ---
 
 <Base
@@ -10,6 +10,15 @@ import { filterProducts } from '@/helpers/FilterProducts';
   description="Shift your reality effortlessly. Download powerful transformational audios designed to help you instantly feel more confident, release imposter syndrome, get your dream job, and align with your best life. Manifest the life you desire with binaural beats and subconscious reprogramming."
 >
   <PageHeader
+    title="We've moved"
+    description="Find out why below:"
+    playSample={false}
+  />
+  <section class="section pb-8">
+    <Rebrand />
+    <CallToAction />
+  </section>
+  <!-- <PageHeader
     title="Self-Worth and Confidence"
     description="Reconnect with your true power and inner knowing. These audio tracks use transformative afformations and supportive binaural beats to help dissolve self-doubt, strengthen your sense of worth, and boost authentic confidence. Each session is created to help you stand in your truth, trust yourself fully, and show up as the empowered version of you—bold, radiant, and unshakable."
     playSample={true}
@@ -30,5 +39,5 @@ import { filterProducts } from '@/helpers/FilterProducts';
         {filterProducts(4).map((item) => <ProductCard info={item} />)}
       </div>
     </div>
-  </section>
+  </section> -->
 </Base>

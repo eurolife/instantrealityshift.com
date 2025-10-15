@@ -3,14 +3,14 @@ title: 'Choose the Area You Want to Transform'
 
 # Place Icons inside src/icons folder and mention the icon name without extension
 list:
-  - title: Wealth and Success
+  - title: Abundance & Prosperity
     desc: Step into alignment with abundance.
     logo: 'money'
-    link: 'wealth-and-success'
-  - title: Love and Relationships
+    link: 'abundance-and-prosperity'
+  - title: Relationships
     desc: Open your heart and attract the connection you desire.
     logo: 'heart'
-    link: 'love-and-relationships'
+    link: 'relationships'
   - title: Self Worth and Confidence
     desc: Reconnect with your true power and inner knowing.
     logo: 'confidence'
@@ -18,13 +18,13 @@ list:
   - title: Health and Well-being
     desc: Support your body, mind, and energy.
     logo: 'health'
-    link: 'health'
+    link: 'health-and-well-being'
   - title: Overcoming Addictions
     desc: Break free from old patterns and reconnect with your inner strength.
     logo: 'addiction'
-    link: 'addiction'
-  - title: Personalised Audio for YOU
-    desc: A powerful audio track designed specifically for your unique situation, goals, and emotional journey.
+    link: 'overcoming-addictions'
+  - title: The ENTIRE Library of audios
+    desc: Unlock unlimited access to every transformational audio in the Your Preferred Life collection.
     logo: 'custom'
-    link: 'custom-audio'
+    link: 'the-ultimate-audio-library'
 ---

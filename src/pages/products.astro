@@ -1,11 +1,8 @@
 ---
 import Base from '@/layouts/Base.astro';
-import product from '@/config/product-categories.json';
-import ProductCard from '@/components/ProductCard.astro';
 import PageHeader from '@/partials/PageHeader.astro';
-import { filterProducts } from '@/helpers/FilterProducts';
-
-const { categories } = product;
+import Rebrand from '@/partials/Rebrand.astro';
+import CallToAction from '@/partials/CallToAction.astro';
 ---
 
 <Base
@@ -13,20 +10,16 @@ const { categories } = product;
   description="Shift your reality effortlessly. Download powerful transformational audios designed to help you instantly improve your wealth and success, health and well-being, break addictions, boost self-confidence, and align with your best life. Manifest the life you desire with binaural beats and subconscious reprogramming."
 >
   <PageHeader
-    title="Audio Shop"
-    description="30-minute audios with afformations (questions) paired with binaural beats meditation background music to amplify the state of receptivity."
-    playSample={true}
+    title="We've moved"
+    description="Find out why below:"
+    playSample={false}
   />
   <section class="section pb-8">
-    <div class="container">
-      <p>
-        Each track is about 30 minutes long. Your download will include the mp3
-        audio file and an audio companion guide (PDF).
-      </p>
-    </div>
+    <Rebrand />
+    <CallToAction />
   </section>
 
-  {
+  <!-- {
     categories.map((category) => (
       <section class="section">
         <div class="container">
@@ -43,5 +36,5 @@ const { categories } = product;
         </div>
       </section>
     ))
-  }
+  } -->
 </Base>

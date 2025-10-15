@@ -1,13 +1,13 @@
 ---
 enable: true
 head: 'ARE YOU READY FOR CHANGE?'
-title: 'Start your reality shift today'
+title: 'Start Your Transformation Today'
 image: '/images/call-to-action.png'
-description: 'Ready to shift your reality? Explore our audio collection and start aligning with the life you’re meant to live.'
+description: 'Visit our new website to explore our audio collection and start aligning with the life you’re meant to live.'
 button:
   enable: true
-  label: 'Explore Audios'
-  link: '/products'
+  label: 'Check it Out'
+  link: 'https://www.yourpreferredlife.com'
 shapes:
   - image: '/images/brain.png'
   - image: '/images/sound.png'
