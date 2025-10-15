@@ -1,0 +1,23 @@
+---
+import Base from '@/layouts/Base.astro';
+import CallToAction from '@/partials/CallToAction.astro';
+import ContactFormSection from '@/partials/ContactFormSection.astro';
+import SocialLinks from '@/partials/SocialLinks.astro';
+import type { CollectionEntry } from 'astro:content';
+import { getEntry } from 'astro:content';
+
+const { title, description, meta_title, pageHeader } = (
+  (await getEntry(
+    'contactPageCollection',
+    '-index'
+  )) as CollectionEntry<'contactPageCollection'>
+).data;
+---
+
+<Base title={title} meta_title={meta_title} description={description}>
+  <iframe
+    src="https://player.mux.com/8OAn53PLQzCatvKRWGwN3x8NEchVKu00cSadSkw8LgKY?metadata-video-title=Wealth+and+Success&video-title=Wealth+and+Success"
+    style="width: 100%; border: none;"
+    allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
+    allowfullscreen></iframe>
+</Base>
